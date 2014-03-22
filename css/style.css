@@ -1,0 +1,168 @@
+body {
+    background: #fff;
+}
+
+/* HEADER */
+.header {overflow:hidden; background: url('../img/sinfocheio.jpg') center no-repeat;;  background-color: transparent; background-size: cover;}
+.header h1 { font-family: ostrich_sans_inlineregular, sans-serif; text-align: center; margin:1em 0 0 0; padding:0; font-size: 4em;}
+.header h1 a, .header h1 a:link, .header h1 a:visited { color:#FFFFFF; text-decoration:none;}
+.header h1 a:hover {text-decoration:none;}
+.header img {width:250px; text-align: center;  padding:2em auto auto auto;}
+.header .description { font-family: Trebuchet MS, Arial, Helvetica, sans-serif; margin:1em auto; width:60%; padding:10px 0 10px 0; color: #FFFFFF; text-align: center;}
+.header .opacidade {background: url(http://sapoblogs.do.sapo.pt/temp/classico_opacidade.png) repeat; padding:1em 0; height: 500px;}
+
+.text-section {
+  padding-top: 50px;
+  padding-bottom: 25px;
+}
+
+.kindaParallax {
+  background-size: cover;-webkit-background-size: cover;-moz-background-size: cover;background-size: cover;background-attachment: fixed;background-position: center center;background-position-x: 50%;background-position-y: 50%;background-repeat: no-repeat;
+}
+
+/* IST */
+.ist {overflow:hidden; background: url('../img/ist.jpg') center no-repeat;;  background-color: transparent; 
+background-size: cover;-webkit-background-size: cover;-moz-background-size: cover;background-size: cover;background-attachment: fixed;background-position: center center;background-position-x: 50%;background-position-y: 50%;background-repeat: no-repeat;}
+.ist h1 { font-family: ostrich_sans_inlineregular, sans-serif; text-align: center; margin:2em 0 0 0; padding:0; font-size: 4em;}
+.ist h1 a, .ist h1 a:link, .ist h1 a:visited { color:#FFFFFF; text-decoration:none;}
+.ist h1 a:hover {text-decoration:none;}
+.ist .description { font-family: Trebuchet MS, Arial, Helvetica, sans-serif; margin:1em auto; width:60%; padding:10px 0 10px 0; color: #FFFFFF; text-align: center;}
+.ist .opacidade {background: url(http://sapoblogs.do.sapo.pt/temp/classico_opacidade.png) repeat; padding:1em 0; height: 500px;}
+
+/* Speakers */
+.speakers {overflow:hidden; background: url('../img/speakers.jpg') center no-repeat;;  background-color: transparent; background-size: cover;
+background-size: cover;-webkit-background-size: cover;-moz-background-size: cover;background-size: cover;background-attachment: fixed;background-position: center center;background-position-x: 50%;background-position-y: 50%;background-repeat: no-repeat;}
+.speakers h1 { font-family: ostrich_sans_inlineregular, sans-serif; text-align: center; margin:2em 0 0 0; padding:0; font-size: 4em;}
+.speakers h1 a, .speakers h1 a:link, .speakers h1 a:visited { color:#FFFFFF; text-decoration:none;}
+.speakers h1 a:hover {text-decoration:none;}
+.speakers .description { font-family: Trebuchet MS, Arial, Helvetica, sans-serif; margin:1em auto; width:60%; padding:10px 0 10px 0; color: #FFFFFF; text-align: center;}
+.speakers .opacidade {background: url(http://sapoblogs.do.sapo.pt/temp/classico_opacidade.png) repeat; padding:1em 0; height: 500px;}
+
+/* sponsors */
+.sponsors {overflow:hidden; background: url('../img/sponsors.jpg') center no-repeat;;  background-color: transparent; background-size: cover;
+background-size: cover;-webkit-background-size: cover;-moz-background-size: cover;background-size: cover;background-attachment: fixed;background-position: center center;background-position-x: 50%;background-position-y: 50%;background-repeat: no-repeat;}
+.sponsors h1 { font-family: ostrich_sans_inlineregular, sans-serif; text-align: center; margin:2em 0 0 0; padding:0; font-size: 4em;}
+.sponsors h1 a, .sponsors h1 a:link, .sponsors h1 a:visited { color:#FFFFFF; text-decoration:none;}
+.sponsors h1 a:hover {text-decoration:none;}
+.sponsors .description { font-family: Trebuchet MS, Arial, Helvetica, sans-serif; margin:1em auto; width:60%; padding:10px 0 10px 0; color: #FFFFFF; text-align: center;}
+.sponsors .opacidade {background: url(http://sapoblogs.do.sapo.pt/temp/classico_opacidade.png) repeat; padding:1em 0; height: 500px;}
+
+/* joinus */
+.joinus {overflow:hidden; background: url('../img/joinus.jpg') bottom no-repeat;;  background-color: transparent; background-size: cover;
+background-size: cover;-webkit-background-size: cover;-moz-background-size: cover;background-size: cover;background-attachment: fixed;background-position: center center;background-position-x: 50%;background-position-y: 50%;background-repeat: no-repeat;}
+.joinus h1 { font-family: ostrich_sans_inlineregular, sans-serif; text-align: center; margin:2em 0 0 0; padding:0; font-size: 4em;}
+.joinus h1 a, .joinus h1 a:link, .joinus h1 a:visited { color:#FFFFFF; text-decoration:none;}
+.joinus h1 a:hover {text-decoration:none;}
+.joinus .description { font-family: Trebuchet MS, Arial, Helvetica, sans-serif; margin:1em auto; width:60%; padding:10px 0 10px 0; color: #FFFFFF; text-align: center;}
+.joinus .opacidade {background: url(http://sapoblogs.do.sapo.pt/temp/classico_opacidade.png) repeat; padding:1em 0; height: 500px;}
+
+/*
+.transparent-button {
+  padding: 15px 15px 20px 20px;
+background-color: rgba(255,255,255,0.5);
+border-width: 1px;
+border-radius: 5px;
+border-color: #fff;
+text-decoration: none;
+color: #fff;
+}
+*/
+.transparent-button
+{
+  -webkit-appearance: none;
+  position: relative;
+  display: inline-block;
+  background: rgba(255,255,255,0.4);
+  padding: 1.5em 3em 1.5em 3em;
+  margin: 1.5em 0em 0em 0em;
+  border-radius: 0.25em;
+  cursor: pointer;
+  border: 2px;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  -moz-transition: all 0.25s ease-in-out;
+  -webkit-transition: all 0.25s ease-in-out;
+  -o-transition: all 0.25s ease-in-out;
+  -ms-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+}
+
+.transparent-button:hover
+{
+  text-decoration: none;
+  color: #fff;
+  background: rgba(255,255,255,0.5);
+}
+
+.img-circle {
+-webkit-border-radius: 500px;
+-moz-border-radius: 500px;
+border-radius: 500px;
+}
+
+      
+.social-icon {
+  margin: 0.1em;
+  opacity: 0.9;
+  color: #fff;
+  font-size: 50px;
+}
+.social-icon:hover {
+  opacity: 1;
+  color: #fff;
+  font-size: 50px;
+}
+
+
+footer {
+height: 200px;
+background: #fff;
+color: #000;
+}
+footer p {
+padding: 0.5em 1em 0.5em 0;
+margin: 0;
+}
+footer .social-icon {
+  margin: 0.1em;
+  opacity: 0.9;
+  color: #999;
+  font-size: 50px;
+}
+footer .social-icon:hover {
+  opacity: 1;
+  color: #999;
+  font-size: 50px;
+}
+footer img {
+  margin-top: 20px;
+  height: 150px;
+  opacity: 0.9;
+}
+footer img:hover{
+  opacity: 1;
+}
+
+header a {
+  text-decoration: none;
+}
+
+#topbar {
+position: fixed;
+top: 0;
+left: 0;
+right: 0;
+background: rgba(0,0,0,0.3);
+z-index: 100;
+-webkit-transform: scale3d(1, 1, 1);
+padding: 20px;
+}
+#topbar a{
+  color: #fff;
+  padding: 0 5px 0 5px;
+  text-decoration: none;
+}
+#topbar img{
+  height: 20px
+}

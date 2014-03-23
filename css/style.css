@@ -151,6 +151,15 @@ header a {
   text-decoration: none;
 }
 
+.justify-text p {
+  text-align:justify;
+  text-justify:inter-word;
+}
+.justify-text {
+  text-align:justify;
+  text-justify:inter-word;
+}
+
 #topbar {
 position: fixed;
 top: 0;

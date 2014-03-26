@@ -170,6 +170,8 @@ header a {
 }
 
 #topbar {
+padding: 20px;
+min-height: 40px;
 position: fixed;
 top: 0;
 left: 0;
@@ -177,15 +179,21 @@ right: 0;
 background: rgba(0,0,0,0.6);
 z-index: 100;
 -webkit-transform: scale3d(1, 1, 1);
-padding: 20px;
 }
+
 #topbar a{
   color: #fff;
-  padding: 0 5px 0 5px;
+  padding: 20px;
+  text-decoration: none;
+}
+#topbar a:hover{
+  background: rgba(255,255,255,0.3);
+  color: #fff;
+  padding: 20px;
   text-decoration: none;
 }
 #topbar img{
-  height: 20px
+  height: 20px;
 }
 
 .team img {

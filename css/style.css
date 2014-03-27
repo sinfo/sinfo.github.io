@@ -213,3 +213,19 @@ z-index: 100;
 .team h6 {
 font-size: 0.9em;
 }
+
+@media (max-width: 650px) {
+    .previous-speakers h6 { font-size: 150%; }
+}
+
+@media (min-width: 650px) {
+    .previous-speakers h6 { font-size: 75%; }
+}
+
+@media (min-width: 800px) {
+    .previous-speakers h6 { font-size: 100%; }
+}
+
+@media (min-width: 1200px) {
+    .previous-speakers h6 { font-size: 150%; }
+}

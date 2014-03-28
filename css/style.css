@@ -65,6 +65,20 @@ background-size: cover;-webkit-background-size: cover;-moz-background-size: cove
 .joinus .description { font-family: Trebuchet MS, Arial, Helvetica, sans-serif; margin:1em auto; width:60%; padding:10px 0 10px 0; color: #FFFFFF; text-align: center;}
 .joinus .opacidade {background: url(http://sapoblogs.do.sapo.pt/temp/classico_opacidade.png) repeat; padding:1em 0; height: 500px;}
 
+@media (max-width: 400px) {
+  .header .description { width:90%; }
+  .speakers .description { width:90%; }
+  .workshops .description { width:90%; }
+  .sponsors .description { width:90%; }
+  .joinus .description { width:90%; }
+
+  .header h1 { font-size:2em; }
+  .speakers h1 { font-size:2em; }
+  .workshops h1 { font-size:2em; }
+  .sponsors h1 { font-size:2em; }
+  .joinus h1 { font-size:2em; }
+}
+
 /*
 .transparent-button {
   padding: 15px 15px 20px 20px;
@@ -169,6 +183,7 @@ header a {
   text-justify:inter-word;
 }
 
+/*
 #topbar {
 padding: 20px;
 min-height: 40px;
@@ -180,7 +195,6 @@ background: rgba(0,0,0,0.6);
 z-index: 100;
 -webkit-transform: scale3d(1, 1, 1);
 }
-
 #topbar a{
   color: #fff;
   padding: 20px;
@@ -194,7 +208,7 @@ z-index: 100;
 }
 #topbar img{
   height: 20px;
-}
+}*/
 
 .team img {
   text-align:center;
@@ -214,6 +228,17 @@ z-index: 100;
 font-size: 0.9em;
 }
 
+@media (max-width: 300px) {
+    .team h6 { font-size: 10%; }
+    .team img { width: 80%; height: 80%;}
+}
+
+@media (min-width: 960px ) and (max-width: 1180px ) {
+    .team h6 { font-size: 70%; }
+    .team img { width: 90%; height: 90%;}
+}
+
+
 @media (max-width: 650px) {
     .previous-speakers h6 { font-size: 150%; }
 }
@@ -226,6 +251,94 @@ font-size: 0.9em;
     .previous-speakers h6 { font-size: 100%; }
 }
 
+@media (min-width: 900px) {
+    .previous-speakers h6 { font-size: 100%; }
+}
+
 @media (min-width: 1200px) {
     .previous-speakers h6 { font-size: 150%; }
+}
+
+#topbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0,0,0,0.6);
+  z-index: 100;
+  -webkit-transform: scale3d(1, 1, 1);
+}
+#topbar img{
+  max-height: 40px;
+}
+#topbar .ink-navigation ul li {
+  font-size: 14px;
+}
+#topbar .ink-navigation ul li a {
+  *height: auto;
+  color: #fff;
+}
+#topbar .ink-navigation ul li a:hover {
+  background: rgba(255,255,255,0.3);
+  color: #ffffff;
+}
+#topbar .ink-navigation ul li a.logoPlaceholder {
+  font-size: 2em;
+  font-weight: bold;
+  line-height: 1.3;
+  padding: 0;
+  margin-right: .5em;
+}
+#topbar .ink-navigation ul li a.logoPlaceholder:hover {
+  background: none;
+}
+#topbar .ink-navigation ul.vertical li a {
+  border-bottom: 1px solid #262626;
+}
+#topbar .ink-navigation ul.vertical li a.logoPlaceholder {
+  margin-right: 0;
+}
+#topbar .ink-navigation ul.vertical li button {
+  background: none;
+  border: none;
+  outline: none;
+  position: absolute;
+  top: .6em;
+  right: 0;
+  padding: 0;
+  color: #fff;
+}
+#topbar .ink-navigation ul.vertical li button:hover,
+#topbar .ink-navigation ul.vertical li button:focus {
+  color: #ffffff;
+}
+#topbar .ink-navigation ul.vertical li button span {
+  font-size: 1.5em;
+}
+#topbar .ink-navigation ul.vertical li.title {
+  border-bottom: 1px solid #262626;
+}
+#topbar .ink-navigation ul.vertical li.title a {
+  border-bottom: none;
+}
+#topbar .ink-navigation ul.vertical li.active a {
+  background: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+#topbar .ink-navigation ul.vertical li:first-child:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+  zoom: 1;
+}
+#topbar .ink-navigation ul.black.flat {
+  background: none;
+  filter: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
 }

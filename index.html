@@ -31,11 +31,34 @@
 
     <body>
       <div id="topbar">
-        <a href="#"><img src="img/logo.png"></a>
-        <a href="#speakers">Speakers</a>
-        <a href="#workshops">Workshops</a>
-        <a href="#sponsors">Sponsor us!</a>
-        <a href="#joinus">Join us!</a>
+        <nav class="ink-navigation ink-grid hide-small hide-tiny ie7">
+          <ul class="menu horizontal flat black shadowed">
+            <li>
+              <a class="logoPlaceholder" href="#" title="SINFO">SINFO</a>
+            </li>
+            <li><a href="#speakers">Speakers</a></li>
+            <li><a href="#workshops">Workshops</a></li>
+            <li><a href="#sponsors">Sponsor us!</a></li>
+            <li><a href="#joinus">Join us!</a></li>
+          </ul>
+          </ul>
+        </nav>
+
+        <nav class="ink-navigation ink-grid hide-all show-small">
+          <ul class="menu vertical flat black">
+            <li class="title">
+              <a class="logoPlaceholder push-left" href="#" title="SINFO">SINFO</a>
+                <button class="toggle" data-target="#topbar_menu"><span class="icon-reorder"></span></button>
+            </li>           
+          </ul>
+
+          <ul class="menu vertical flat black hide-all" id="topbar_menu">
+            <li><a href="#speakers">Speakers</a></li>
+            <li><a href="#workshops">Workshops</a></li>
+            <li><a href="#sponsors">Sponsor us!</a></li>
+            <li><a href="#joinus">Join us!</a></li>
+          </ul>
+        </nav>
       </div>
 
       <div class="header kindaParallax" id="header">
@@ -319,6 +342,7 @@
                   <a class="social-icon" target="_blank" href="http://twitter.com/sinfo_ist"><i class="fa fa-twitter"></i></a>
                   <a class="social-icon" target="_blank" href="http://youtube.com/sinfoist"><i class="fa fa-youtube"></i></a>
                   <a class="social-icon" target="_blank" href="http://instagram.com/sinfo_ist"><i class="fa fa-instagram"></i></a>
+                  <a class="social-icon" target="_blank" href="mailto:geral@sinfo.org"><i class="fa fa-envelope"></i></a>
                 </ul>
             </nav>
             <p class="push-right small-100"><a href="http://tecnico.pt" target="_blank"><img src="img/logoist.png"></a></p>

@@ -289,6 +289,11 @@ font-size: 0.9em;
   padding: 0;
   margin-right: .5em;
 }
+#topbar .ink-navigation ul li a.logoPlaceholder img {
+  margin-top: 4px;
+  height: 24px;
+}
+
 #topbar .ink-navigation ul li a.logoPlaceholder:hover {
   background: none;
 }

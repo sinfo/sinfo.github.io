@@ -151,6 +151,10 @@ footer nav {
 padding: 35px 0 35px 0;
 margin: 0;
 }
+footer div {
+padding: 10px 0 35px 0;
+margin: 0;
+}
 footer .social-icon {
   margin: 0 0.1em 0 0.1em;
   opacity: 1;
@@ -163,6 +167,7 @@ footer .social-icon:hover {
   font-size: 50px;
 }
 footer img {
+  margin-top: 15px;
   height: 50px;
   opacity: 1;
 }

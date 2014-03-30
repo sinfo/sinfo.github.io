@@ -65,6 +65,15 @@ background-size: cover;-webkit-background-size: cover;-moz-background-size: cove
 .joinus .description { font-family: Trebuchet MS, Arial, Helvetica, sans-serif; margin:1em auto; width:60%; padding:10px 0 10px 0; color: #FFFFFF; text-align: center;}
 .joinus .opacidade {background: url(http://sapoblogs.do.sapo.pt/temp/classico_opacidade.png) repeat; padding:1em 0; height: 500px;}
 
+/* news */
+.news {overflow:hidden; background: url('../img/news.jpg') bottom no-repeat;;  background-color: transparent; background-size: cover;
+background-size: cover;-webkit-background-size: cover;-moz-background-size: cover;background-size: cover;background-attachment: fixed;background-position: center center;background-position-x: 50%;background-position-y: 50%;background-repeat: no-repeat;}
+.news h1 { font-family: ostrich_sans_inlineregular, sans-serif; text-align: center; margin:2em 0 0 0; padding:0; font-size: 4em;}
+.news h1 a, .news h1 a:link, .news h1 a:visited { color:#FFFFFF; text-decoration:none;}
+.news h1 a:hover {text-decoration:none;}
+.news .description { font-family: Trebuchet MS, Arial, Helvetica, sans-serif; margin:1em auto; width:60%; padding:10px 0 10px 0; color: #FFFFFF; text-align: center;}
+.news .opacidade {background: url(http://sapoblogs.do.sapo.pt/temp/classico_opacidade.png) repeat; padding:1em 0; height: 400px;}
+
 @media (max-width: 400px) {
   .header .description { width:90%; }
   .speakers .description { width:90%; }
@@ -137,6 +146,11 @@ border-radius: 500px;
   font-size: 50px;
 }
 
+.big-mail {
+  text-align: center;
+  font-size: 150px;
+}
+
 
 footer {
 min-height: 140px;
@@ -167,7 +181,7 @@ footer .social-icon:hover {
   font-size: 50px;
 }
 footer img {
-  margin-top: 15px;
+  margin-top: 40px;
   height: 50px;
   opacity: 1;
 }

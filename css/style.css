@@ -72,7 +72,7 @@ background-size: cover;-webkit-background-size: cover;-moz-background-size: cove
 .news h1 a, .news h1 a:link, .news h1 a:visited { color:#FFFFFF; text-decoration:none;}
 .news h1 a:hover {text-decoration:none;}
 .news .description { font-family: Trebuchet MS, Arial, Helvetica, sans-serif; margin:1em auto; width:60%; padding:10px 0 10px 0; color: #FFFFFF; text-align: center;}
-.news .opacidade {background: url(http://sapoblogs.do.sapo.pt/temp/classico_opacidade.png) repeat; padding:1em 0; height: 400px;}
+.news .opacidade {background: url(http://sapoblogs.do.sapo.pt/temp/classico_opacidade.png) repeat; padding:1em 0; height: 500px;}
 
 @media (max-width: 400px) {
   .header .description { width:90%; }

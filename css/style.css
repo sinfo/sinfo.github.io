@@ -76,12 +76,14 @@ background-size: cover;-webkit-background-size: cover;-moz-background-size: cove
 
 @media (max-width: 400px) {
   .header .description { width:90%; }
+  .news .description { width:90%; }
   .speakers .description { width:90%; }
   .workshops .description { width:90%; }
   .sponsors .description { width:90%; }
   .joinus .description { width:90%; }
 
   .header h1 { font-size:2em; }
+  .news h1 { font-size:2em; }
   .speakers h1 { font-size:2em; }
   .workshops h1 { font-size:2em; }
   .sponsors h1 { font-size:2em; }

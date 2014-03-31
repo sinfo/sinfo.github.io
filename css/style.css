@@ -137,6 +137,7 @@ border-radius: 500px;
 
       
 .social-icon {
+  text-decoration: none;
   margin: 0.1em;
   opacity: 0.9;
   color: #fff;

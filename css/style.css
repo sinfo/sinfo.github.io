@@ -45,7 +45,7 @@ background-size: cover;-webkit-background-size: cover;-moz-background-size: cove
 .workshops h1 a, .workshops h1 a:link, .workshops h1 a:visited { color:#FFFFFF; text-decoration:none;}
 .workshops h1 a:hover {text-decoration:none;}
 .workshops .description { font-family: Trebuchet MS, Arial, Helvetica, sans-serif; margin:1em auto; width:60%; padding:10px 0 10px 0; color: #FFFFFF; text-align: center;}
-.workshops .opacidade {background: url(http://sapoblogs.do.sapo.pt/temp/classico_opacidade.png) repeat; padding:1em 0; height: 500px;}
+.workshops .opacidade {background: url(http://sapoblogs.do.sapo.pt/temp/classico_opacidade.png) repeat; padding:1em 0; height: 400px;}
 
 /* sponsors */
 .sponsors {overflow:hidden; background: url('../img/sponsors.jpg') center no-repeat;;  background-color: transparent; background-size: cover;

@@ -255,6 +255,11 @@ font-size: 0.9em;
     .team img { width: 80%; height: 80%;}
 }
 
+@media (min-width: 400px ) and (max-width: 500px ) {
+    .team h6 { font-size: 70%; }
+}
+
+
 @media (min-width: 960px ) and (max-width: 1180px ) {
     .team h6 { font-size: 70%; }
     .team img { width: 90%; height: 90%;}

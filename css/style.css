@@ -56,14 +56,14 @@ background-size: cover;-webkit-background-size: cover;-moz-background-size: cove
 .sponsors .description { font-family: Trebuchet MS, Arial, Helvetica, sans-serif; margin:1em auto; width:60%; padding:10px 0 10px 0; color: #FFFFFF; text-align: center;}
 .sponsors .opacidade {background: url(http://sapoblogs.do.sapo.pt/temp/classico_opacidade.png) repeat; padding:1em 0; height: 500px;}
 
-/* joinus */
-.joinus {overflow:hidden; background: url('../img/joinus.jpg') bottom no-repeat;;  background-color: transparent; background-size: cover;
+/* meetus */
+.meetus {overflow:hidden; background: url('../img/meetus.jpg') bottom no-repeat;;  background-color: transparent; background-size: cover;
 background-size: cover;-webkit-background-size: cover;-moz-background-size: cover;background-size: cover;background-attachment: fixed;background-position: center center;background-position-x: 50%;background-position-y: 50%;background-repeat: no-repeat;}
-.joinus h1 { font-family: ostrich_sans_inlineregular, sans-serif; text-align: center; margin:2em 0 0 0; padding:0; font-size: 4em;}
-.joinus h1 a, .joinus h1 a:link, .joinus h1 a:visited { color:#FFFFFF; text-decoration:none;}
-.joinus h1 a:hover {text-decoration:none;}
-.joinus .description { font-family: Trebuchet MS, Arial, Helvetica, sans-serif; margin:1em auto; width:60%; padding:10px 0 10px 0; color: #FFFFFF; text-align: center;}
-.joinus .opacidade {background: url(http://sapoblogs.do.sapo.pt/temp/classico_opacidade.png) repeat; padding:1em 0; height: 500px;}
+.meetus h1 { font-family: ostrich_sans_inlineregular, sans-serif; text-align: center; margin:2em 0 0 0; padding:0; font-size: 4em;}
+.meetus h1 a, .meetus h1 a:link, .meetus h1 a:visited { color:#FFFFFF; text-decoration:none;}
+.meetus h1 a:hover {text-decoration:none;}
+.meetus .description { font-family: Trebuchet MS, Arial, Helvetica, sans-serif; margin:1em auto; width:60%; padding:10px 0 10px 0; color: #FFFFFF; text-align: center;}
+.meetus .opacidade {background: url(http://sapoblogs.do.sapo.pt/temp/classico_opacidade.png) repeat; padding:1em 0; height: 500px;}
 
 /* news */
 .news {overflow:hidden; background: url('../img/news.jpg') bottom no-repeat;;  background-color: transparent; background-size: cover;
@@ -80,14 +80,14 @@ background-size: cover;-webkit-background-size: cover;-moz-background-size: cove
   .speakers .description { width:90%; }
   .workshops .description { width:90%; }
   .sponsors .description { width:90%; }
-  .joinus .description { width:90%; }
+  .meetus .description { width:90%; }
 
   .header h1 { font-size:2em; }
   .news h1 { font-size:2em; }
   .speakers h1 { font-size:2em; }
   .workshops h1 { font-size:2em; }
   .sponsors h1 { font-size:2em; }
-  .joinus h1 { font-size:2em; }
+  .meetus h1 { font-size:2em; }
 }
 
 /*

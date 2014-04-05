@@ -250,12 +250,12 @@ z-index: 100;
 font-size: 0.9em;
 }
 
-@media (max-width: 300px) {
+@media (max-width: 320px) {
     .team h6 { font-size: 50%; }
     .team img { width: 80%; height: 80%;}
 }
 
-@media (min-width: 400px ) and (max-width: 500px ) {
+@media (min-width: 320px ) and (max-width: 500px ) {
     .team h6 { font-size: 80%; }
 }
 

@@ -237,6 +237,7 @@ z-index: 100;
   border-radius: 50%;
   width: 150px;
   height: 150px;
+  margin-bottom: 10px;
 }
 .team div {
   text-align:center;
@@ -245,9 +246,20 @@ z-index: 100;
   text-align:center;
   margin-bottom: 10px;
 }
-
 .team h6 {
 font-size: 0.9em;
+}
+.team a {
+  text-decoration: none;
+  opacity: 0.9;
+  color: #555;
+}
+.team a:hover {
+  opacity: 1;
+}
+.team i {
+  margin: 2px;
+  font-size: 120%;
 }
 
 @media (max-width: 320px) {

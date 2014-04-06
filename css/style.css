@@ -3,75 +3,71 @@ body {
 }
 
 /* HEADER */
-.header {overflow:hidden; background: url('../img/sinfocheio.jpg') center no-repeat;;  background-color: transparent; background-size: cover;}
-.header h1 { font-family: ostrich_sans_inlineregular, sans-serif; text-align: center; margin:1em 0 0 0; padding:0; font-size: 4em;}
+.header {overflow:hidden; background: url('../img/sinfocheio.jpg') center no-repeat;;  background-color: transparent; 
+background-size: cover;-webkit-background-size: cover;-moz-background-size: cover;background-size: cover;background-attachment: fixed;background-position: center center;background-position-x: 50%;background-position-y: 50%;background-repeat: no-repeat;}
+.header h1 { text-align: center; margin:1em 0 0 0; padding:0; font-size: 4em;}
 .header h1 a, .header h1 a:link, .header h1 a:visited { color:#FFFFFF; text-decoration:none;}
 .header h1 a:hover {text-decoration:none;}
 .header img {width:250px; text-align: center;  padding:2em auto auto auto;}
-.header .description { font-family: Trebuchet MS, Arial, Helvetica, sans-serif; margin:1em auto; width:60%; padding:10px 0 10px 0; color: #FFFFFF; text-align: center;}
+.header .description { margin:1em auto; width:60%; padding:10px 0 10px 0; color: #FFFFFF; text-align: center;}
 .header .opacidade {background: url(http://sapoblogs.do.sapo.pt/temp/classico_opacidade.png) repeat; padding:1em 0; height: 500px;}
 
 .text-section {
   padding-top: 50px;
   padding-bottom: 25px;
 }
-
-.kindaParallax {
-  background-size: cover;-webkit-background-size: cover;-moz-background-size: cover;background-size: cover;background-attachment: fixed;background-position: center center;background-position-x: 50%;background-position-y: 50%;background-repeat: no-repeat;
-}
-
 /* IST */
 .ist {overflow:hidden; background: url('../img/ist.jpg') center no-repeat;;  background-color: transparent; 
 background-size: cover;-webkit-background-size: cover;-moz-background-size: cover;background-size: cover;background-attachment: fixed;background-position: center center;background-position-x: 50%;background-position-y: 50%;background-repeat: no-repeat;}
-.ist h1 { font-family: ostrich_sans_inlineregular, sans-serif; text-align: center; margin:2em 0 0 0; padding:0; font-size: 4em;}
+.ist h1 { text-align: center; margin:2em 0 0 0; padding:0; font-size: 4em;}
 .ist h1 a, .ist h1 a:link, .ist h1 a:visited { color:#FFFFFF; text-decoration:none;}
 .ist h1 a:hover {text-decoration:none;}
-.ist .description { font-family: Trebuchet MS, Arial, Helvetica, sans-serif; margin:1em auto; width:60%; padding:10px 0 10px 0; color: #FFFFFF; text-align: center;}
+.ist .description { margin:1em auto; width:60%; padding:10px 0 10px 0; color: #FFFFFF; text-align: center;}
 .ist .opacidade {background: url(http://sapoblogs.do.sapo.pt/temp/classico_opacidade.png) repeat; padding:1em 0; height: 500px;}
 
 /* Speakers */
 .speakers {overflow:hidden; background: url('../img/speakers.jpg') center no-repeat;;  background-color: transparent; background-size: cover;
 background-size: cover;-webkit-background-size: cover;-moz-background-size: cover;background-size: cover;background-attachment: fixed;background-position: center center;background-position-x: 50%;background-position-y: 50%;background-repeat: no-repeat;}
-.speakers h1 { font-family: ostrich_sans_inlineregular, sans-serif; text-align: center; margin:2em 0 0 0; padding:0; font-size: 4em;}
+.speakers h1 { text-align: center; margin:2em 0 0 0; padding:0; font-size: 4em;}
 .speakers h1 a, .speakers h1 a:link, .speakers h1 a:visited { color:#FFFFFF; text-decoration:none;}
 .speakers h1 a:hover {text-decoration:none;}
-.speakers .description { font-family: Trebuchet MS, Arial, Helvetica, sans-serif; margin:1em auto; width:60%; padding:10px 0 10px 0; color: #FFFFFF; text-align: center;}
+.speakers .description { margin:1em auto; width:60%; padding:10px 0 10px 0; color: #FFFFFF; text-align: center;}
 .speakers .opacidade {background: url(http://sapoblogs.do.sapo.pt/temp/classico_opacidade.png) repeat; padding:1em 0; height: 500px;}
 
 /* workshops */
 .workshops {overflow:hidden; background: url('../img/workshops.jpg') center no-repeat;;  background-color: transparent; background-size: cover;
 background-size: cover;-webkit-background-size: cover;-moz-background-size: cover;background-size: cover;background-attachment: fixed;background-position: center center;background-position-x: 50%;background-position-y: 50%;background-repeat: no-repeat;}
-.workshops h1 { font-family: ostrich_sans_inlineregular, sans-serif; text-align: center; margin:2em 0 0 0; padding:0; font-size: 4em;}
+.workshops h1 { text-align: center; margin:2em 0 0 0; padding:0; font-size: 4em;}
 .workshops h1 a, .workshops h1 a:link, .workshops h1 a:visited { color:#FFFFFF; text-decoration:none;}
 .workshops h1 a:hover {text-decoration:none;}
-.workshops .description { font-family: Trebuchet MS, Arial, Helvetica, sans-serif; margin:1em auto; width:60%; padding:10px 0 10px 0; color: #FFFFFF; text-align: center;}
+.workshops .description { margin:1em auto; width:60%; padding:10px 0 10px 0; color: #FFFFFF; text-align: center;}
 .workshops .opacidade {background: url(http://sapoblogs.do.sapo.pt/temp/classico_opacidade.png) repeat; padding:1em 0; height: 400px;}
 
 /* sponsors */
 .sponsors {overflow:hidden; background: url('../img/sponsors.jpg') center no-repeat;;  background-color: transparent; background-size: cover;
 background-size: cover;-webkit-background-size: cover;-moz-background-size: cover;background-size: cover;background-attachment: fixed;background-position: center center;background-position-x: 50%;background-position-y: 50%;background-repeat: no-repeat;}
-.sponsors h1 { font-family: ostrich_sans_inlineregular, sans-serif; text-align: center; margin:2em 0 0 0; padding:0; font-size: 4em;}
+.sponsors h1 { text-align: center; margin:2em 0 0 0; padding:0; font-size: 4em;}
 .sponsors h1 a, .sponsors h1 a:link, .sponsors h1 a:visited { color:#FFFFFF; text-decoration:none;}
 .sponsors h1 a:hover {text-decoration:none;}
-.sponsors .description { font-family: Trebuchet MS, Arial, Helvetica, sans-serif; margin:1em auto; width:60%; padding:10px 0 10px 0; color: #FFFFFF; text-align: center;}
+.sponsors .description { margin:1em auto; width:60%; padding:10px 0 10px 0; color: #FFFFFF; text-align: center;}
 .sponsors .opacidade {background: url(http://sapoblogs.do.sapo.pt/temp/classico_opacidade.png) repeat; padding:1em 0; height: 500px;}
 
 /* meetus */
 .meetus {overflow:hidden; background: url('../img/meetus.jpg') bottom no-repeat;;  background-color: transparent; background-size: cover;
 background-size: cover;-webkit-background-size: cover;-moz-background-size: cover;background-size: cover;background-attachment: fixed;background-position: center center;background-position-x: 50%;background-position-y: 50%;background-repeat: no-repeat;}
-.meetus h1 { font-family: ostrich_sans_inlineregular, sans-serif; text-align: center; margin:2em 0 0 0; padding:0; font-size: 4em;}
+.meetus h1 { text-align: center; margin:1.5em 0 0 0; padding:0; font-size: 4em;}
 .meetus h1 a, .meetus h1 a:link, .meetus h1 a:visited { color:#FFFFFF; text-decoration:none;}
 .meetus h1 a:hover {text-decoration:none;}
-.meetus .description { font-family: Trebuchet MS, Arial, Helvetica, sans-serif; margin:1em auto; width:60%; padding:10px 0 10px 0; color: #FFFFFF; text-align: center;}
-.meetus .opacidade {background: url(http://sapoblogs.do.sapo.pt/temp/classico_opacidade.png) repeat; padding:1em 0; height: 500px;}
+.meetus .description { margin:1em auto; width:60%; padding:10px 0 10px 0; color: #FFFFFF; text-align: center;}
+.meetus .opacidade {background: url(http://sapoblogs.do.sapo.pt/temp/classico_opacidade.png) repeat; padding:1em 0; height: 400px;}
 
 /* news */
 .news {overflow:hidden; background: url('../img/news.jpg') bottom no-repeat;;  background-color: transparent; background-size: cover;
 background-size: cover;-webkit-background-size: cover;-moz-background-size: cover;background-size: cover;background-attachment: fixed;background-position: center center;background-position-x: 50%;background-position-y: 50%;background-repeat: no-repeat;}
-.news h1 { font-family: ostrich_sans_inlineregular, sans-serif; text-align: center; margin:2em 0 0 0; padding:0; font-size: 4em;}
+.news h1 { text-align: center; margin:2em 0 0 0; padding:0; font-size: 4em;}
 .news h1 a, .news h1 a:link, .news h1 a:visited { color:#FFFFFF; text-decoration:none;}
 .news h1 a:hover {text-decoration:none;}
-.news .description { font-family: Trebuchet MS, Arial, Helvetica, sans-serif; margin:1em auto; width:60%; padding:10px 0 10px 0; color: #FFFFFF; text-align: center;}
+.news .description { margin:1em auto; width:60%; padding:10px 0 10px 0; color: #FFFFFF; text-align: center;}
 .news .opacidade {background: url(http://sapoblogs.do.sapo.pt/temp/classico_opacidade.png) repeat; padding:1em 0; height: 400px;}
 
 @media (max-width: 400px) {
@@ -237,6 +233,7 @@ z-index: 100;
   border-radius: 50%;
   width: 150px;
   height: 150px;
+  margin-bottom: 10px;
 }
 .team div {
   text-align:center;
@@ -245,9 +242,20 @@ z-index: 100;
   text-align:center;
   margin-bottom: 10px;
 }
-
 .team h6 {
 font-size: 0.9em;
+}
+.team a {
+  text-decoration: none;
+  opacity: 0.9;
+  color: #555;
+}
+.team a:hover {
+  opacity: 1;
+}
+.team i {
+  margin: 2px;
+  font-size: 120%;
 }
 
 @media (max-width: 320px) {

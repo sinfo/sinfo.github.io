@@ -243,11 +243,11 @@ z-index: 100;
   margin-bottom: 10px;
 }
 .team h6 {
-font-size: 0.9em;
+font-size: 0.8em;
 }
 .team a {
   text-decoration: none;
-  opacity: 0.9;
+  opacity: 0.8;
   color: #555;
 }
 .team a:hover {

@@ -131,13 +131,16 @@ color: #fff;
 border-radius: 500px;
 }
 
+.fa{
+  font-size: 50px;
+}
       
 .social-icon {
+  font-size: 50px;
   text-decoration: none;
   margin: 0.1em;
   opacity: 0.9;
   color: #fff;
-  font-size: 50px;
 }
 .social-icon:hover {
   opacity: 1;

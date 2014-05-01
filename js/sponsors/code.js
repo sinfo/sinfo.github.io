@@ -11,21 +11,6 @@ $(document).ready(function() {
         }
     });
 
-    //navbar
-    Ink.requireModules(['Ink.UI.Sticky_1'], function(Sticky) {
-        new Sticky('header')
-    });
-
-    $("#nav").find("a").on("click", function(event) {
-        $("#nav").find("li").removeClass("active");
-        $(event.target).parent().addClass("active");
-    });
-
-    if ($(location).attr("hash")) {
-        $("#nav").find("li").removeClass("active");
-        $("#nav").find("a[href=" + $(location).attr("hash") + "]").parent().addClass("active");
-    }
-
     //table
     var rows = $("tbody").find("tr").not(".prices");
     var infobox = $("#infobox");

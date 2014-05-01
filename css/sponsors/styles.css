@@ -21,20 +21,20 @@ table :hover {
 	color: white;
 }
 
-.pale-blue {
-	background: #3F91E1 !important;
+.pale-gray {
+	background: #999 !important;
 	color: white;
 }
 
-.pale-blue * {
+.pale-gray * {
 	color: white;
 }
 
-.pale-blue a {
+.pale-gray a {
 	color: blue;
 }
 
-.pale-blue h3 {
+.pale-gray h3 {
 	margin-top: 5px;
 }
 

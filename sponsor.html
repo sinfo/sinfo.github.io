@@ -1,38 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>
+        SINFO
+    </title>
+    <meta name="description" content="SINFO is an annual not-for-profit event organised exclusively by college students who strive for a more interesting and ground-breaking event each edition.">
+    <meta name="author" content="SINFO">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
 
-	<head>
-		<meta charset="utf-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-		<title>Sponsors</title>
-		<meta name="description" content="">
-		<meta name="author" content="ink, cookbook, recipes">
-		<meta name="HandheldFriendly" content="True">
-		<meta name="MobileOptimized" content="320">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon" />
 
-		<!-- load inks css from the cdn -->
-		<link rel="stylesheet" type="text/css" href="http://cdn.ink.sapo.pt/3.0.0/css/ink-flex.min.css">
-		<link rel="stylesheet" type="text/css" href="http://cdn.ink.sapo.pt/3.0.0/css/font-awesome.min.css">
+    <meta property="og:title" content="SINFO" />
+    <meta property="og:url" content="http://sinfo.github.io/" />
+    <meta property="og:image" content="http://sinfo.github.io/img/sinfocheio.jpg" />
+    <meta property="og:description" content="SINFO is an annual not-for-profit event organised exclusively by college students who strive for a more interesting and ground-breaking event each edition." />
 
-		<!-- load inks css for IE8 -->
-		<!--[if lt IE 9 ]>
-			<link rel="stylesheet" href="http://cdn.ink.sapo.pt/3.0.0/css/ink-ie.min.css" type="text/css" media="screen" title="no title" charset="utf-8">
-		<![endif]-->
+    <!-- load inks css -->
+    <link rel="stylesheet" type="text/css" href="css/vendor/ink/ink-flex.min.css">
+    <link rel="stylesheet" type="text/css" href="css/vendor/ink/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
 
-		<!-- test browser flexbox support and load legacy grid if unsupported -->
-		<script type="text/javascript" src="http://cdn.ink.sapo.pt/3.0.0/js/modernizr.js"></script>
-		<script type="text/javascript">
-			Modernizr.load({
-				test: Modernizr.flexbox,
-				nope : "http://cdn.ink.sapo.pt/3.0.0/css/ink-legacy.min.css"
-			});
-		</script>
+    <!-- load inks css for IE8 -->
+    <!--[if lt IE 9 ]>
+        <link rel="stylesheet" href="css/vendor/ink/ink-ie.min.css" type="text/css" media="screen" title="no title" charset="utf-8">
+    <![endif]-->
 
-		<!-- load inks javascript files from the cdn -->
-		<script type="text/javascript" src="http://cdn.ink.sapo.pt/3.0.0/js/holder.js"></script>
-		<script type="text/javascript" src="http://cdn.ink.sapo.pt/3.0.0/js/ink-all.min.js"></script>
-		<script type="text/javascript" src="http://cdn.ink.sapo.pt/3.0.0/js/autoload.js"></script>
+    <!-- test browser flexbox support and load legacy grid if unsupported -->
+    <script type="text/javascript" src="js/vendor/ink/modernizr.js"></script>
+    <script type="text/javascript">
+        Modernizr.load({
+          test: Modernizr.flexbox,
+          nope : 'css/vendor/ink/ink-legacy.min.css'
+        });
+    </script>
+
+    <!-- load inks javascript files -->
+    <script type="text/javascript" src="js/vendor/ink/holder.js"></script>
+    <script type="text/javascript" src="js/vendor/ink/ink-all.min.js"></script>
+    <script type="text/javascript" src="js/vendor/ink/autoload.js"></script>
+
+
 
 		<!-- my stuff -->
 		<link rel="stylesheet" type="text/css" href="css/sponsors/styles.css">
@@ -40,33 +52,55 @@
 		<script type="text/javascript" src="js/sponsors/jquery.scrollTo.min.js"></script>
 		<script type="text/javascript" src="js/sponsors/jquery.localScroll.min.js"></script>
 		<script type="text/javascript" src="js/sponsors/code.js"></script>
-	</head>
+  </head>
 
 	<body>
-		<!--[if lte IE 9 ]>
-		<div class="ink-alert basic">
-			<button class="ink-dismiss">&times;</button>
-			<p>
-				<strong>You are using an outdated Internet Explorer version.</strong>
-				Please <a href="http://browsehappy.com/">upgrade to a browser</a> to improve your web experience.
-			</p>
-		</div>
-		-->
+	  <div id="topbar">
+      <nav class="ink-navigation ink-grid hide-small hide-tiny ie7">
+        <ul class="menu horizontal flat black shadowed">
+          <li>
+            <a class="logoPlaceholder" href="#" title="SINFO">Sponsor  <img src="img/logotext.png"></a>
+          </li>
+					<li class="active"><a href="#description">Description</a></li>
+					<li><a href="#reasons">Reasons to sponsor</a></li>
+					<li><a href="#conditions">Sponsorship conditions</a></li>
+					<li><a href="#deadlines">Deadlines</a></li>
+					<li><a href="#more-information">More information</a></li>
+        </ul>
+      </nav>
+
+      <nav class="ink-navigation ink-grid hide-all show-small">
+        <ul class="menu vertical flat black">
+          <li class="title">
+            <a class="logoPlaceholder push-left" href="#" title="SINFO">Sponsor  <img src="img/logotext.png"></a>
+              <button class="toggle" data-target="#topbar_menu"><span class="fa fa-reorder"></span></button>
+          </li>           
+        </ul>
+
+        <ul class="menu vertical flat black hide-all" id="topbar_menu">
+					<li class="active"><a href="#description">Description</a></li>
+					<li><a href="#reasons">Reasons to sponsor</a></li>
+					<li><a href="#conditions">Sponsorship conditions</a></li>
+					<li><a href="#deadlines">Deadlines</a></li>
+					<li><a href="#more-information">More information</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="sponsor-header" id="sponsor-header">
+      <div class="opacidade">
+        <h1>
+        	<a href="#" title="">Sponsor us!</a>
+        </h1>
+        <div class="description">
+        	See how you can help us creating the biggest SINFO ever! 
+        </div>
+      </div>
+    </div>
+
+    <br><br>
 
 		<div class="ink-grid">
-			<header>
-				<h1>SINFO<small><b>Sponsors</b></small></h1>
-				<nav id="nav" class="ink-navigation">
-					<ul class="menu horizontal blue">
-						<li class="active"><a href="#description">Description</a></li>
-						<li><a href="#reasons">Reasons to sponsor</a></li>
-						<li><a href="#conditions">Sponsorship conditions</a></li>
-						<li><a href="#deadlines">Deadlines</a></li>
-						<li><a href="#more-information">More information</a></li>
-					</ul>
-				</nav>
-			</header>
-
 			<div id="description" class="column-group gutters">
 				<div class="all-100">
 					<h2>Description</h2>
@@ -462,15 +496,33 @@
 			</div>
 		</div>
 
-		<footer class="clearfix">
-			<div class="ink-grid">
-				<ul class="unstyled inline half-vertical-space">
-					<li class="active"><a href="#">About</a></li>
-					<li><a href="#">Sitemap</a></li>
-					<li><a href="#">Contacts</a></li>
-				</ul>
-				<p class="note">Identification of the owner of the copyright, either by name, abbreviation, or other designation by which it is generally known.</p>
-			</div>
-		</footer>
+    <footer>
+      <div class="ink-grid">
+          <div class="push-left all-50 small-100 tiny-100 small-push-left">
+                <a href="http://tecnico.pt" target="_blank"><img src="img/logoist.png"></a>
+          </div>
+          <nav class="ink-navigation push-right medium-150 small-100 tiny-100 small-push-right">
+              <ul class="menu horizontal">
+                <a class="social-icon" target="_blank" href="http://fb.com/sinfoist"><i class="social-icon fa fa-facebook"></i></a>
+                <a class="social-icon" target="_blank" href="http://twitter.com/sinfo_ist"><i class="social-icon fa fa-twitter"></i></a>
+                <a class="social-icon" target="_blank" href="http://youtube.com/sinfoist"><i class="social-icon fa fa-youtube"></i></a>
+                <a class="social-icon" target="_blank" href="http://instagram.com/sinfo_ist"><i class="social-icon fa fa-instagram"></i></a>
+                <a class="social-icon" target="_blank" href="http://github.com/sinfo"><i class="social-icon fa fa-github"></i></a>
+                <a class="social-icon" target="_blank" href="mailto:geral@sinfo.org"><i class="social-icon fa fa-envelope"></i></a>
+              </ul>
+          </nav>
+      </div>
+
+      <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-49601832-1', 'sinfo.org');
+        ga('send', 'pageview');
+
+      </script>
+    </footer>
 	</body>
 </html>

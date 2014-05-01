@@ -1,0 +1,77 @@
+body {
+	background: white;
+}
+
+header {
+	background: white;
+}
+
+header h1 small:before  {
+	content: "|";
+	margin: 0 0.5em;
+	font-size: 1.6em;
+}
+
+table {
+	margin-bottom: 0px;
+}
+
+table :hover {
+	cursor: default;
+}
+
+.selected {
+	background: gray !important;
+	color: white;
+}
+
+.pale-blue {
+	background: #3F91E1 !important;
+	color: white;
+}
+
+.pale-blue * {
+	color: white;
+}
+
+.pale-blue a {
+	color: blue;
+}
+
+.pale-blue h3 {
+	margin-top: 5px;
+}
+
+.gold {
+	background: #FFD700 !important;
+	color: #555555;
+}
+
+.silver {
+	background: #CCC !important;
+	color: #555555;
+}
+
+.bronze {
+	background: #CD7F32 !important;
+	color: #555555;
+}
+
+.selected .gold {
+	background: #FFB600 !important;
+	color: #555555;
+}
+
+.selected .silver {
+	background: #999999 !important;
+	color: #555555;
+}
+
+.selected .bronze {
+	background: #A8672A !important;
+	color: #555555;
+}
+
+footer {
+	background: #EDEDED;
+}

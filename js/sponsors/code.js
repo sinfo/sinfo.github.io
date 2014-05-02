@@ -6,7 +6,7 @@ $(document).ready(function() {
         duration: 1000,
         hash: true,
         offset: {
-            top: parseInt($("header").css("height")) * -1,
+            top: parseInt($("#topbar").css("height")) * -1,
             left: 0
         }
     });
@@ -20,12 +20,15 @@ $(document).ready(function() {
     rows.first().addClass("selected");
     infobox.find("#" + rows.first()[0].id + "-info").show();
 
-    rows.on("mouseenter", function(event) {
+    var action = function(event) {
         rows.removeClass("selected");
         infobox.find(".info").hide();
 
         var row = $(event.target).parent();
         row.addClass("selected");
         infobox.find("#" + row[0].id + "-info").show();
-    });
+    };
+
+    rows.on("click", action);
+    rows.on("mouseenter", action);
 });

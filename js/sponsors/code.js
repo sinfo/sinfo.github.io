@@ -6,7 +6,7 @@ $(document).ready(function() {
         duration: 1000,
         hash: true,
         offset: {
-            top: parseInt($("header").css("height")) * -1,
+            top: parseInt($("#topbar").css("height")) * -1,
             left: 0
         }
     });

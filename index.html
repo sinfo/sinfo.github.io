@@ -26,10 +26,15 @@
     <link rel="stylesheet" type="text/css" href="css/vendor/ink/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
 
+    <!-- CSS to style the file input field as button and adjust the Bootstrap progress bars -->
+    <link rel="stylesheet" href="css/vendor/jquery_fileupload/jquery.fileupload.css">
+
     <!-- load inks css for IE8 -->
     <!--[if lt IE 9 ]>
         <link rel="stylesheet" href="css/vendor/ink/ink-ie.min.css" type="text/css" media="screen" title="no title" charset="utf-8">
     <![endif]-->
+
+    <script type="text/javascript" src="js/vendor/jquery.min.js"></script>
 
     <!-- test browser flexbox support and load legacy grid if unsupported -->
     <script type="text/javascript" src="js/vendor/ink/modernizr.js"></script>
@@ -44,6 +49,15 @@
     <script type="text/javascript" src="js/vendor/ink/holder.js"></script>
     <script type="text/javascript" src="js/vendor/ink/ink-all.min.js"></script>
     <script type="text/javascript" src="js/vendor/ink/autoload.js"></script>
+
+    <!-- The jQuery UI widget factory, can be omitted if jQuery UI is already included -->
+    <script src="js/vendor/jquery_fileupload/vendor/jquery.ui.widget.js"></script>
+    <!-- The Iframe Transport is required for browsers without support for XHR file uploads -->
+    <script src="js/vendor/jquery_fileupload/jquery.iframe-transport.js"></script>
+    <!-- The basic File Upload plugin -->
+    <script src="js/vendor/jquery_fileupload/jquery.fileupload.js"></script>
+
+    <script src="js/fileupload/fileupload.js"></script>
   </head>
 
   <body>
@@ -151,23 +165,32 @@
         <div class="all-40 medium-50 small-100 tiny-100 justify-text">
           <!-- Begin MailChimp Signup Form -->
           <div id="mc_embed_signup">
-          <form action="http://sinfo.us8.list-manage.com/subscribe/post?u=de57247db0922adf365af7eef&amp;id=cbc6013242" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="ink-form validate" target="_blank" novalidate>
-            <h3>Subscribe to our newsletter</h3>
-            <div class="control-group">
-              <div class="column-group gutters">
-                <div class="control all-100 append-button">
-                  <span>
-                    <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
-                  </span>
-                  <button value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="ink-button">Subscribe</button>
+            <form action="http://sinfo.us8.list-manage.com/subscribe/post?u=de57247db0922adf365af7eef&amp;id=cbc6013242" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="ink-form validate" target="_blank" novalidate>
+              <h3>Subscribe to our newsletter</h3>
+              <div class="control-group">
+                <div class="column-group gutters">
+                  <div class="control all-100 append-button">
+                    <span>
+                      <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
+                    </span>
+                    <button value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="ink-button">Subscribe</button>
+                  </div>
                 </div>
               </div>
-            </div>
-          </form>
+            </form>
           </div>
           <!--End mc_embed_signup-->
           <!--<i class="fa fa-envelope-alt big-mail"></i>-->
 
+          <div>
+            <h3>Send us your resumé</h3>
+            <span class="ink-button blue fileinput-button">
+              <span>Select file</span>
+              <!-- The file input field used as target for the file upload widget -->
+              <input id="fileupload" type="file" name="file">
+            </span>
+            <span id="upload" class="ink-button green" style="display: none;"></span>
+          </div>
         </div>
       </div>
     </div>

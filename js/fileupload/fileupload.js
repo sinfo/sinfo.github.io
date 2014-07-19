@@ -15,8 +15,6 @@ $(function () {
       }
     },
     add: function (e, data) {
-      $("#upload").removeClass("red");
-      $("#upload").addClass("green");
       $("#upload").text("Upload " + data.files[0].name);
       $("#upload").click(function() {
         data.submit();

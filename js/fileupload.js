@@ -15,7 +15,7 @@ $(function () {
 
     $("#upload-form").ajaxForm({
       beforeSubmit: function () {
-        $("#upload").val("Uploading" + file + "...");
+        $("#upload").val("Uploading " + file + "...");
       },
       success: function (data) {
         $("#upload").removeClass("red");

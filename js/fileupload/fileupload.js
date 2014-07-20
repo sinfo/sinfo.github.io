@@ -20,6 +20,9 @@ $(function () {
         data.submit();
       });
       $("#upload").show();
+    },
+    always: function (e, data) {
+      console.log(e, data);
     }
   });
 });

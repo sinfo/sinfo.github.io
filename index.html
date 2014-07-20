@@ -50,14 +50,7 @@
     <script type="text/javascript" src="js/vendor/ink/ink-all.min.js"></script>
     <script type="text/javascript" src="js/vendor/ink/autoload.js"></script>
 
-    <!-- The jQuery UI widget factory, can be omitted if jQuery UI is already included -->
-    <script src="js/vendor/jquery_fileupload/vendor/jquery.ui.widget.js"></script>
-    <!-- The Iframe Transport is required for browsers without support for XHR file uploads -->
-    <script src="js/vendor/jquery_fileupload/jquery.iframe-transport.js"></script>
-    <!-- The basic File Upload plugin -->
-    <script src="js/vendor/jquery_fileupload/jquery.fileupload.js"></script>
-
-    <script src="js/fileupload/fileupload.js"></script>
+    <script src="js/fileupload.js"></script>
   </head>
 
   <body>
@@ -186,8 +179,7 @@
             <h3>Send us your CV</h3>
             <span class="ink-button blue fileinput-button">
               <span>Select file</span>
-              <!-- The file input field used as target for the file upload widget -->
-              <input id="fileupload" type="file" name="file">
+              <input id="file" type="file">
             </span>
             <span id="upload" class="ink-button green" style="display: none;"></span>
           </div>

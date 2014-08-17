@@ -156,14 +156,6 @@
             Use the form located at the right to send us your CV until the end of July and we'll do the rest.<br>
             We'll get you an awesome job in no time!
           </p>
-
-          <span class="note">May 30th, 2014</span>
-          <h3>Video Editing Workshop</h3>
-          <p>
-            Do you want to learn how to create an amazing video? One that becomes famous or viral? <br>
-            SINFO brings you the perfect Workshop! <br>
-            Get your ticket <a href="https://ti.to/sinfo/ws-video/">here</a>.
-          </p>
         </div>
         <div class="all-40 medium-50 small-100 tiny-100 justify-text">
           <!-- Begin MailChimp Signup Form -->
@@ -187,11 +179,18 @@
 
           <div>
             <h3>Send us your CV</h3>
-            <form id="upload-form" action="http://resumes.bananamarket.eu/upload" enctype="multipart/form-data" method="post">
+	    <small class="note">Please name your file as firstname_lastname.pdf</small>
+            <br><br>
+	    <form enctype="multipart/form-data" action="upload.php" method="post">
+	      <input type="hidden" name="MAX_FILE_SIZE" value="1000000" />
+   	      <input name="uploaded_file" type="file" />
+    	      <input type="submit" value="Upload" />
+  	    </form> 
+	    <!--<form id="upload-form" action="http://resumes.bananamarket.eu/upload" enctype="multipart/form-data" method="post">
               Select your file: <input id="file" name="file" type="file">
               <br><br>
               <input type="submit" id="upload" class="ink-button green" style="display: none;">
-            </form>
+            </form>-->
           </div>
         </div>
       </div>

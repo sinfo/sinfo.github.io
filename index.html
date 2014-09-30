@@ -26,10 +26,15 @@
     <link rel="stylesheet" type="text/css" href="css/vendor/ink/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
 
+    <!-- CSS to style the file input field as button and adjust the Bootstrap progress bars -->
+    <link rel="stylesheet" href="css/vendor/jquery.fileupload.css">
+
     <!-- load inks css for IE8 -->
     <!--[if lt IE 9 ]>
         <link rel="stylesheet" href="css/vendor/ink/ink-ie.min.css" type="text/css" media="screen" title="no title" charset="utf-8">
     <![endif]-->
+
+    <script type="text/javascript" src="js/vendor/jquery.min.js"></script>
 
     <!-- test browser flexbox support and load legacy grid if unsupported -->
     <script type="text/javascript" src="js/vendor/ink/modernizr.js"></script>
@@ -44,6 +49,9 @@
     <script type="text/javascript" src="js/vendor/ink/holder.js"></script>
     <script type="text/javascript" src="js/vendor/ink/ink-all.min.js"></script>
     <script type="text/javascript" src="js/vendor/ink/autoload.js"></script>
+
+    <script type="text/javascript" src="js/vendor/jquery.form.min.js"></script>
+    <script type="text/javascript" src="js/fileupload.js"></script>
   </head>
 
   <body>
@@ -141,31 +149,44 @@
       </div>
       <div class="column-group gutters">
         <div class="all-60 medium-50 small-100 tiny-100 justify-text">
-          <span class="note">March 30th, 2014</span>
-          <h3>Come with SINFO to ENEI 2014</h3>
-          <p>Come with us to Encontro Nacional de Estudantes de Informática 2014. <br>It will happen in Aveiro on April 10-14.
-          Find out more <a href="https://www.facebook.com/events/274251866068428/">here</a>.</p>
+          <span class="note">July 21st, 2014</span>
+          <h3>SINFO wants to help you get a job</h3>
+          <p>
+            Do you want to work for one of the companies at XXI SINFO?<br>
+            Use the form located at the right to send us your CV until the end of July and we'll do the rest.<br>
+            We'll get you an awesome job in no time!
+          </p>
         </div>
         <div class="all-40 medium-50 small-100 tiny-100 justify-text">
           <!-- Begin MailChimp Signup Form -->
           <div id="mc_embed_signup">
-          <form action="http://sinfo.us8.list-manage.com/subscribe/post?u=de57247db0922adf365af7eef&amp;id=cbc6013242" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="ink-form validate" target="_blank" novalidate>
-            <h3>Subscribe to our newsletter</h3>
-            <div class="control-group">
-              <div class="column-group gutters">
-                <div class="control all-100 append-button">
-                  <span>
-                    <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
-                  </span>
-                  <button value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="ink-button">Subscribe</button>
+            <form action="http://sinfo.us8.list-manage.com/subscribe/post?u=de57247db0922adf365af7eef&amp;id=cbc6013242" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="ink-form validate" target="_blank" novalidate>
+              <h3>Subscribe to our newsletter</h3>
+              <div class="control-group">
+                <div class="column-group gutters">
+                  <div class="control all-100 append-button">
+                    <span>
+                      <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
+                    </span>
+                    <button value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="ink-button">Subscribe</button>
+                  </div>
                 </div>
               </div>
-            </div>
-          </form>
+            </form>
           </div>
           <!--End mc_embed_signup-->
           <!--<i class="fa fa-envelope-alt big-mail"></i>-->
 
+          <!--<div>
+            <h3>Send us your CV</h3>
+	    <small class="note">Please name your file as firstname_lastname.pdf</small>
+            <br><br>
+	    <form enctype="multipart/form-data" action="upload.php" method="post">
+	      <input type="hidden" name="MAX_FILE_SIZE" value="1000000" />
+   	      <input name="uploaded_file" type="file" />
+    	      <input type="submit" value="Upload" />
+  	    </form> 
+          </div>-->
         </div>
       </div>
     </div>
@@ -423,17 +444,6 @@
           <a href="http://github.com/jmdbo" target="_blank"><i class="fa fa-github"></i></a>
         </div>
         <div class="all-15 medium-30 small-50 tiny-50">
-          <h6>Luis Riscado</h6>
-          <img src="img/team/luis_riscado.jpg" onmouseover="this.src='img/team/luis_riscado_sinfo.jpg'" onmouseout="this.src='img/team/luis_riscado.jpg'" alt="">
-          <br>
-          <a href="mailto:@sinfo.org"><i class="fa fa-envelope"></i></a>
-        </div>
-      </div>
-      <div class="column-group gutters">
-        <div class="all-5 hide-medium hide-small">
-          <!-- spacer -->
-        </div>
-        <div class="all-15 medium-30 small-50 tiny-50">
           <h6>Mike Duarte</h6>
           <img src="img/team/mike_duarte.jpg" onmouseover="this.src='img/team/mike_duarte_sinfo.jpg'" onmouseout="this.src='img/team/mike_duarte.jpg'" alt="">
           <br>
@@ -442,11 +452,10 @@
           <a href="http://twitter.com/MikedDuarte" target="_blank"><i class="fa fa-twitter"></i></a>
           <a href="https://www.linkedin.com/profile/view?id=293893594" target="_blank"><i class="fa fa-linkedin"></i></a>
           </div>
-        <div class="all-15 medium-30 small-50 tiny-50">
-          <h6>Manuel Piçarra</h6>
-          <img src="img/team/manuel_picarra.png" onmouseover="this.src='img/team/manuel_picarra_sinfo.jpg'" onmouseout="this.src='img/team/manuel_picarra.png'" alt="">
-          <br>
-          <a href="mailto:manuel.picarra@sinfo.org"><i class="fa fa-envelope"></i></a>
+      </div>
+      <div class="column-group gutters">
+        <div class="all-5 hide-medium hide-small">
+          <!-- spacer -->
         </div>
         <div class="all-15 medium-30 small-50 tiny-50">
           <h6>Pedro Saraiva</h6>
@@ -483,11 +492,6 @@
           <a href="mailto:adriana.domingos@sinfo.org"><i class="fa fa-envelope"></i></a>
           <a href="http://facebook.com/adrianadomingos" target="_blank"><i class="fa fa-facebook"></i></a>
         </div>
-      </div>
-      <div class="column-group gutters">
-        <div class="all-5 hide-medium hide-small">
-          <!-- spacer -->
-        </div>
         <div class="all-15 medium-30 small-50 tiny-50">
           <h6>Carina Antunes</h6>
           <img src="img/team/carina_antunes.jpg" onmouseover="this.src='img/team/carina_antunes.jpg'" onmouseout="this.src='img/team/carina_antunes.jpg'" alt="">
@@ -502,6 +506,11 @@
           <br>
           <a href="mailto:mafalda.antunes@sinfo.org"><i class="fa fa-envelope"></i></a>
         </div>
+      </div>
+      <div class="column-group gutters">
+        <div class="all-5 hide-medium hide-small">
+          <!-- spacer -->
+        </div>
         <div class="all-15 medium-30 small-50 tiny-50">
           <h6>Mafalda Magro</h6>
           <img src="img/team/mafalda_magro.jpg" onmouseover="this.src='img/team/mafalda_magro.jpg'" onmouseout="this.src='img/team/mafalda_magro.jpg'" alt="">
@@ -514,6 +523,8 @@
           <br>
           <a href="mailto:yuliya.plotka@sinfo.org"><i class="fa fa-envelope"></i></a>
           <a href="http://twitter.com/juliaplotka" target="_blank"><i class="fa fa-twitter"></i></a>
+          <a href="http://linkedin.com/in/yuliyaplotka" target="_blank"><i class="fa fa-linkedin"></i></a>
+          <a href="http://github.com/plotka" target="_blank"><i class="fa fa-github"></i></a>
         </div>
         <div class="all-15 medium-30 small-50 tiny-50">
           <h6>André Domingues</h6>
@@ -530,17 +541,15 @@
           <a href="mailto:diogo.lopes@sinfo.org"><i class="fa fa-envelope"></i></a>
           <a href="https://www.facebook.com/diogo.lopes.18294" target="_blank"><i class="fa fa-facebook"></i></a>
         </div>
-      </div>
-      <div class="column-group gutters">
-        <div class="all-5 hide-medium hide-small">
-          <!-- spacer -->
-        </div>
         <div class="all-15 medium-30 small-50 tiny-50">
           <h6>Diogo Pais</h6>
           <img src="img/team/diogo_pais.png" onmouseover="this.src='img/team/diogo_pais.png'" onmouseout="this.src='img/team/diogo_pais.png'" alt="">
           <br>
           <a href="mailto:diogo.pais@sinfo.org"><i class="fa fa-envelope"></i></a>
-          <a href="http://facebook.com/diogo.pais.7165" target="_blank"><i class="fa fa-facebook"></i></a>
+          <a href="https://www.facebook.com/diogo.pais.7165" target="_blank"><i class="fa fa-facebook"></i></a>
+          <a href="https://www.twitter.com/MakayPT" target="_blank"><i class="fa fa-twitter"></i></a>
+          <a href="https://www.linkedin.com/in/diogopais" target="_blank"><i class="fa fa-linkedin"></i></a>
+          <a href="https://www.github.com/Makay11" target="_blank"><i class="fa fa-github"></i></a>
         </div>
         <div class="all-15 medium-30 small-50 tiny-50">
           <h6>Francisco Gonçalves</h6>
@@ -552,12 +561,18 @@
           <a href="http://lnkd.in/b8Bgj-G" target="_blank"><i class="fa fa-linkedin"></i></a>
           <a href="http://instagram.com/franciscocsg" target="_blank"><i class="fa fa-instagram"></i></a>
         </div>
+      </div>
+      <div class="column-group gutters">
+        <div class="all-5 hide-medium hide-small">
+          <!-- spacer -->
+        </div>
         <div class="all-15 medium-30 small-50 tiny-50">
           <h6>João Antunes</h6>
           <img src="img/team/joao_antunes.jpg" onmouseover="this.src='img/team/joao_antunes.jpg'" onmouseout="this.src='img/team/joao_antunes.jpg'" alt="">
           <br>
           <a href="mailto:joao.antunes@sinfo.org"><i class="fa fa-envelope"></i></a>
           <a href="https://www.facebook.com/joao.antunes.752" target="_blank"><i class="fa fa-facebook"></i></a>
+          <a href="http://twitter.com/jgantunes" target="_blank"><i class="fa fa-twitter"></i></a>
           <a href="https://pt.linkedin.com/in/jgantunes" target="_blank"><i class="fa fa-linkedin"></i></a>
           <a href="https://github.com/JGAntunes" target="_blank"><i class="fa fa-github"></i></a>
         </div>
@@ -584,8 +599,14 @@
           <br>
           <a href="mailto:tiago.ramos@sinfo.org"><i class="fa fa-envelope"></i></a>
         </div>
-      </div>
-      <div class="column-group gutters">
+        <div class="all-15 medium-30 small-50 tiny-50">
+          <h6>Gustavo Brites</h6>
+          <img src="img/team/gustavo_brites.jpg" onmouseover="this.src='img/team/gustavo_brites.jpg'" onmouseout="this.src='img/team/gustavo_brites.jpg'" alt="">
+          <br>
+          <a href="mailto:gustavo.brites@sinfo.org"><i class="fa fa-envelope"></i></a>
+          <a href="https://www.facebook.com/GustavoLBrites" target="_blank"><i class="fa fa-facebook"></i></a>
+          <a href="https://pt.linkedin.com/pub/antónio-gustavo-brites/68/501/948/" target="_blank"><i class="fa fa-linkedin"></i></a>
+        </div>
       </div>
     </div>
 

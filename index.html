@@ -642,20 +642,22 @@
 
     <div class="ink-grid text-section">
       <div class="column-group gutters">
-        <div class="all-50 medium-50 small-50">
+        <div class="all-50 medium-100 small-100">
+          <div id="orador_img" style="width:300px;" class="push-right">
+            <img onclick="$(this).attr('src', 'img/orador1.jpg');$('#textoOrador').show();$('#span_orador').text('Press to find more');$(this).attr('onclick','window.open(\'http://www.helderpinto.com/\')');" src="img/who.jpg">
+            <br>
+            <div id="span_orador" style="margin-top:20px;text-align:center;">Press to reveal</div>
+          </div>
         </div>
-        <div id="orador_img" class="all-20 medium-20 small-20">
-          <img onmouseover="$('#textoOrador').show();$('#span_orador').text('Press to find more');$(this).attr('src', 'img/orador1.jpg');" onmouseout="$('#span_orador').text('Mouse over to reveal');$('#textoOrador').hide();$(this).attr('src', 'img/who.jpg');" onclick="window.open('http://www.helderpinto.com/');" src="img/who.jpg"><br>
-          <span id="span_orador">Mouse over to reveal</span>
+        <div class="all-50 medium-100 small-100 justify-text">
+          <div id="textoOrador" style="display:none;">
+            Worked at Crytek as Level Artist during Crysis 2 and midway through Crysis 3.
+            <br>He was responsible for performance, aesthetics, dressing the scene, modeling assets, creating textures and tweaking materials / shaders to bring the scene to life. While always respecting the Level Designers vision (block-mesh).
+            <br>
+            <br>Since 2012 he has been working as 3D Environment Artist at Blizzard Entertainment, bringing to life Diablo 3.
+            <br>
+          </div>
         </div>
-        <div id="textoOrador" style="display:none;" class="all-30 medium-30 small-30">
-        Worked at Crytek as Level Artist during Crysis 2 and midway through Crysis 3.
-        <br>He was responsible for performance, aesthetics, dressing the scene, modeling assets, creating textures and tweaking materials / shaders to bring the scene to life. While always respecting the Level Designers vision (block-mesh).
-        <br>
-        <br>Since 2012 he has been working as 3D Environment Artist at Blizzard Entertainment, bringing to life Diablo 3.
-        <br>
-        </div>
-
       </div>
     </div>
 

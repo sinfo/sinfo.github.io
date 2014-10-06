@@ -71,7 +71,7 @@ background-size: cover;-webkit-background-size: cover;-moz-background-size: cove
 .news .opacidade {background: url(http://sapoblogs.do.sapo.pt/temp/classico_opacidade.png) repeat; padding:1em 0; height: 400px;}
 
 /* news */
-.orador {overflow:hidden; background: url('../img/news.jpg') bottom no-repeat;;  background-color: transparent; background-size: cover;
+.orador {overflow:hidden; background: url('../img/orador.jpg') bottom no-repeat;;  background-color: transparent; background-size: cover;
 background-size: cover;-webkit-background-size: cover;-moz-background-size: cover;background-size: cover;background-attachment: fixed;background-position: center center;background-position-x: 50%;background-position-y: 50%;background-repeat: no-repeat;
 height: 400px;}
 .orador h1 { text-align: center; margin:2em 0 0 0; padding:0; font-size: 4em;}

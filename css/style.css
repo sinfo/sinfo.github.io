@@ -70,6 +70,25 @@ background-size: cover;-webkit-background-size: cover;-moz-background-size: cove
 .news .description { margin:1em auto; width:60%; padding:10px 0 10px 0; color: #FFFFFF; text-align: center;}
 .news .opacidade {background: url(http://sapoblogs.do.sapo.pt/temp/classico_opacidade.png) repeat; padding:1em 0; height: 400px;}
 
+/* news */
+.orador {overflow:hidden; background: url('../img/orador.jpg') bottom no-repeat;;  background-color: transparent; background-size: cover;
+background-size: cover;-webkit-background-size: cover;-moz-background-size: cover;background-size: cover;background-attachment: fixed;background-position: center center;background-position-x: 50%;background-position-y: 50%;background-repeat: no-repeat;
+height: 400px;}
+.orador h1 { text-align: center; margin:2em 0 0 0; padding:0; font-size: 4em;}
+.orador h1 a, .orador h1 a:link, .orador h1 a:visited { color:#FFFFFF; text-decoration:none;}
+.orador h1 a:hover {text-decoration:none;}
+.orador .description { margin:1em auto; width:60%; padding:10px 0 10px 0; color: #FFFFFF; text-align: center;font-size: 40px;}
+.orador .opacidade {background: url(http://sapoblogs.do.sapo.pt/temp/classico_opacidade.png) repeat; padding:1em 0;height: 400px;}
+#orador_img img {
+  text-align: center; 
+  box-shadow: 0 0 20px rgba(0, 0, 0, 1);
+  -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 1); 
+  -moz-box-shadow: 0 0 20px rgba(0, 0, 0, 1);
+}
+.orador .opacidade h1{
+  margin-top: 55px;
+}
+
 @media (max-width: 400px) {
   .header .description { width:90%; }
   .news .description { width:90%; }
@@ -77,6 +96,7 @@ background-size: cover;-webkit-background-size: cover;-moz-background-size: cove
   .workshops .description { width:90%; }
   .sponsors .description { width:90%; }
   .meetus .description { width:90%; }
+  .orador .description { width:90%; }
 
   .header h1 { font-size:2em; }
   .news h1 { font-size:2em; }
@@ -84,6 +104,7 @@ background-size: cover;-webkit-background-size: cover;-moz-background-size: cove
   .workshops h1 { font-size:2em; }
   .sponsors h1 { font-size:2em; }
   .meetus h1 { font-size:2em; }
+  .orador h1 { font-size:2em; }
 }
 
 /*

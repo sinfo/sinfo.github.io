@@ -318,6 +318,18 @@ font-size: 0.8em;
     .previous-speakers h6 { font-size: 150%; }
 }
 
+.whois div {
+  text-align:center;
+}
+
+#whoIsPhoto img {
+  cursor: pointer;
+}
+
+.whois p {
+  margin-top: 20px;
+}
+
 #topbar {
   position: fixed;
   top: 0;

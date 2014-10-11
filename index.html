@@ -656,26 +656,40 @@
         </div>
       </div>
     </div>
-
-    <div class="ink-grid text-section">
-      <div class="column-group gutters">
-        <div class="all-50 medium-100 small-100">
-          <div id="orador_img" style="width:300px;" class="push-right">
-            <img onclick="$(this).attr('src', 'img/orador1.jpg');$('#textoOrador').show();$('#span_orador').text('Press to find more');$(this).attr('onclick','window.open(\'http://www.helderpinto.com/\')');" src="img/who.jpg">
-            <br>
-            <div id="span_orador" style="margin-top:20px;text-align:center;">Press to reveal</div>
-          </div>
-        </div>
-        <div class="all-50 medium-100 small-100 justify-text">
-          <div id="textoOrador" style="display:none;">
-            Worked at Crytek as Level Artist during Crysis 2 and midway through Crysis 3.
-            <br>He was responsible for performance, aesthetics, dressing the scene, modeling assets, creating textures and tweaking materials / shaders to bring the scene to life. While always respecting the Level Designers vision (block-mesh).
-            <br>
-            <br>Since 2012 he has been working as 3D Environment Artist at Blizzard Entertainment, bringing to life Diablo 3.
-            <br>
-          </div>
-        </div>
-      </div>
+    
+    <div class="ink-grid text-section whois">
+    	<div class="column-group gutters">
+    		<div class="all-100" id="whoIsTitle">
+    			<h3>¡ Click in the photo to reveal !</h3>
+    		</div>
+    	</div>
+    	<div class="column-group gutters">
+    		<div class="all-100" id="whoIsPhoto">
+    			<img src="img/who.jpg" onclick="
+    			$(this).after('<p>Yes! Helder Pinto will be at SINFO XXI, know more below</p>');
+    			$(this).replaceWith('<img src=&quot;img/orador1.jpg&quot;>');    			
+    			$('#whoIsPhoto').attr('id', 'whoIsNewPhoto');
+    			$('#whoIsTitle h3').replaceWith('<h2>Helder Pinto</h2>');
+    			$('#videoReveal').show();
+    			$('#OradorInfo').show();">
+    		</div>
+    	</div>
+    	<div class="column-group gutters">
+    		<div class="all-60 medium-100 small-100">
+    			<div id="videoReveal" style="display:none;">
+    				<iframe width="560" height="315" src="http://www.youtube.com/embed/ogYIiPJI1HA" frameborder="0" allowfullscreen></iframe>
+    			</div>
+    		</div>
+    		<div class="all-35 medium-100 small-100">
+    			<div id="OradorInfo" style="display:none;">
+    				Worked at Crytek as Level Artist during Crysis 2 and midway through Crysis 3.
+           			<br>He was responsible for performance, aesthetics, dressing the scene, modeling assets, creating textures and tweaking materials / shaders to bring the scene to life. While always respecting the Level Designers vision (block-mesh).
+            		<br>
+            		<br>Since 2012 he has been working as 3D Environment Artist at Blizzard Entertainment, bringing to life Diablo 3.
+            		<br><a href="http://www.helderpinto.com" target="_blank">Click here to discover more</a>
+    			</div>
+    		</div>
+    	</div>
     </div>
 
     <footer>

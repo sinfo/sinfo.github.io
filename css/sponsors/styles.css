@@ -7,18 +7,42 @@ background-size: cover;-webkit-background-size: cover;-moz-background-size: cove
 .sponsor-header .description { margin:1em auto; width:60%; padding:10px 0 10px 0; color: #FFFFFF; text-align: center;}
 .sponsor-header .opacidade {background: url(http://sapoblogs.do.sapo.pt/temp/classico_opacidade.png) repeat; padding:1em 0; height: 200px;}
 
+body {
+  margin: 20px auto;
+  font: 12px Verdana,Arial, Helvetica, sans-serif;
+}
+
+.content {
+	margin: 0 0 0 0;
+	padding: 0 0 0 0;
+}
+
+.impar {
+	background-color: #f2f2f2;
+}
 
 table {
 	margin-bottom: 0px;
+	background-color: white;
 }
 
-table :hover {
-	cursor: default;
+th {
+	padding: 5px 5px 5px 5px;
+	background-color: #808080;
+	color: white;
+}
+
+td {
+	padding: 5px 5px 5px 5px;
+}
+
+li {
+	list-style-type: none; 
 }
 
 .selected {
-	background: gray !important;
-	color: white;
+	background: white;
+	color: gray;
 }
 
 .pale-gray {
@@ -67,3 +91,36 @@ table :hover {
 	background: #A8672A !important;
 	color: #555555;
 }
+
+.layer1 {
+margin: 0;
+padding: 0;
+width: 700px;
+}
+ 
+.heading {
+margin-bottom: 1px;
+color: #fff;
+padding: 7px 10px;
+cursor: pointer;
+position: relative;
+background-color:#c30;
+}
+.content {
+padding: 5px 10px;
+background-color:#fafafa;
+}
+p { padding: 5px 0; }
+
+.linha:hover {
+  cursor: pointer;
+  background-color: #c0c0c0;
+  color: white;
+}
+
+.descricao:hover{
+	margin: 0 0;
+	padding: 0 0;
+	background-color: white;
+	text-decoration: none;
+};

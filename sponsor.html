@@ -124,13 +124,14 @@
 
 					<script type="text/javascript">
 			              jQuery(document).ready(function() {
+
 			                jQuery(".content").hide();
+
 			                //toggle the componenet with class msg_body
 			                jQuery(".heading").click(function(){
 			                  jQuery(this).next(".content").slideToggle(500);
+			                  jQuery(this).next("linha").next("descricao").show();
 			                });
-
-			                jQuery(".descricao").hide();
 
 			                jQuery(".linha").click(function(){
 			                  jQuery(".descricao").hide();
@@ -176,7 +177,7 @@
 									</table>
 								</div>
 							<p class="heading">Semana SINFO</p> 
-							    <div class="content" style="display: block; padding: 0 0; margin: 0 0; text-align: center;"> 
+							    <div class="content" style="display: block; padding: 0 0; margin: 0 0; text-align: center;" > 
 							       <table class="all-100" style="text-align: center;">
 							       		<thead>
 						       				<tr>
@@ -227,9 +228,9 @@
 									            <td>M</td>    
 									            <td>L</td>
 									            <td>XL</td>
-									            <tr class="descricao">
-									              <td colspan="5">
-								              		<div id="folders-info" class="info">
+									            <tr class="descricao" >
+									              <td colspan="5" class="noPadding">
+								              		<div id="folders-info" class="info shadow">
 														<h3>Logo on folders</h3>
 														<p>
 															Your company's logo will be included in the folders distributed for free during the event.<br>
@@ -248,9 +249,9 @@
 									            <td>M</td>
 									            <td>L</td>
 									            <td>XL</td>
-									            <tr class="descricao">
+									            <tr class="descricao" style="display: none;">
 									              <td colspan="5">
-									              	<div id="social-networks-info" class="info">
+									              	<div id="social-networks-info" class="info shadow">
 														<h3>Post(s) on social networks</h3>
 														<p>Posting ads on our pages:</p>
 														<ul>
@@ -271,9 +272,9 @@
 									            <td>M</td>    
 									            <td>L</td>
 									            <td>XL</td>
-									            <tr class="descricao">
+									            <tr class="descricao" style="display: none;">
 									              <td colspan="5">
-									              <div id="website-info" class="info">
+									              <div id="website-info" class="info shadow">
 													<h3>Logo in our website</h3>
 													<p>
 														Logotipo no site na secção dos patrocinadores do evento.
@@ -290,9 +291,9 @@
 									            <td>M</td>    
 									            <td>L</td>
 									            <td>XL</td>
-									            <tr class="descricao">
+									            <tr class="descricao" style="display: none;">
 									              <td colspan="5">
-									              	<div id="folders-doc-info" class="info">
+									              	<div id="folders-doc-info" class="info shadow">
 														<h3>Documentation in the folders</h3>
 														<p>
 															Possibility to include in the folders distributed for free during the event documentation, brochures,<br>
@@ -308,16 +309,18 @@
 									            <td>M</td>    
 									            <td>L</td>
 									            <td>XL</td>
-									            <tr class="descricao">
+									            <tr class="descricao" style="display: none;">
 									              <td colspan="5">
-									              		<div id="showcase-info" class="info">
+									              	<div id="showcase-info" class="info shadow">
 														<h3>Logo on showcase</h3>
 														<p>
 															The company's logo will appear on the Showcase panel.<br>
 															The Showcase is a space, in the technology exposition, reserved for interaction with speakers,<br>
 															exhibits and technology demonstrations.
 														</p>
-														<img src="img/sponsors/showcase.jpg">
+														<div class="column-group push-center quarter-bottom-space">
+															<img src="img/sponsors/showcase.jpg">
+														</div>
 													</div>
 									              </td>
 									            </tr>
@@ -328,9 +331,9 @@
 									            <td>M</td>    
 									            <td>L</td>
 									            <td>XL</td>
-									            <tr class="descricao">
+									            <tr class="descricao" style="display: none;">
 									              <td colspan="5">
-									              	<div id="posters-info" class="info">
+									              	<div id="posters-info" class="info shadow">
 														<h3>Logo on posters</h3>
 														<p>
 															The company's logo will be included in all posters posted at IST, other major colleges in our country and<br>
@@ -349,9 +352,9 @@
 									            <td>M</td>    
 									            <td>L</td>
 									            <td>XL</td>
-									            <tr class="descricao">
+									            <tr class="descricao" style="display: none;">
 									              <td colspan="5">
-									              	<div id="placemats-info" class="info">
+									              	<div id="placemats-info" class="info shadow">
 														<h3>Logo on placemats</h3>
 														<p>The company's logo will be placed in individual placemats.</p>
 														<p>Placemats will be placed in the week prior to the event and the week of the event at:</p>
@@ -373,9 +376,9 @@
 									            <td>M</td>    
 									            <td>L</td>
 									            <td>XL</td>
-									            <tr class="descricao">
+									            <tr class="descricao"  style="display: none;">
 									              <td colspan="5">
-									              	<div id="flyers-info" class="info">
+									              	<div id="flyers-info" class="info shadow">
 														<h3>Logo on timetable flyers</h3>
 														<p>Inclusion of your company logo in all programs distributed for free before and during the event.</p>
 														<div class="column-group push-center quarter-gutters">
@@ -393,9 +396,9 @@
 									            <td>-</td>    
 									            <td>L</td>
 									            <td>XL</td>
-									            <tr class="descricao">
+									            <tr class="descricao"  style="display: none;">
 									              <td colspan="5">
-									              	<div id="t-shirts-info" class="info">
+									              	<div id="t-shirts-info" class="info shadow">
 														<h3>Logo on T-Shirts</h3>
 														<p>The company's logo will be present in the back of every sold T-Shirt.</p>
 														<div class="column-group push-center">
@@ -411,9 +414,9 @@
 									            <td>-</td>    
 									            <td>L</td>
 									            <td>XL</td>
-									            <tr class="descricao">
+									            <tr class="descricao"  style="display: none;">
 									              <td colspan="5">
-									              <div id="logo-site-everywhere-info" class="info">
+									              <div id="logo-site-everywhere-info" class="info shadow">
 														<h3>Logo on our Website (Everywhere)</h3>
 														<p> Logotipo no site da SINFO que estará visível em todas as páginas do website.</p>
 														<div class="column-group push-center">
@@ -428,9 +431,9 @@
 									            <td>-</td>    
 									            <td>L</td>
 									            <td>XL</td>
-									            <tr class="descricao">
+									            <tr class="descricao"  style="display: none;">
 									              <td colspan="5">
-										              <div id="banners-info" class="info">
+										              <div id="banners-info" class="info shadow">
 														<h3>Logo on banners</h3>
 														<p>
 															The company's logo will be included in all banners that we have at campus gates as well as in several<br>
@@ -450,9 +453,9 @@
 									            <td>-</td>    
 									            <td>L</td>
 									            <td>XL</td>
-									            <tr class="descricao">
+									            <tr class="descricao"  style="display: none;">
 									              <td colspan="5">
-									              	<div id="logo-social-networks-info" class="info">
+									              	<div id="logo-social-networks-info" class="info shadow">
 														<h3>Logo on our social networks cover photo</h3>
 														<p> Logotipo no cabeçalho das páginas das redes sociais da SINFO.</p>
 														<div class="column-group push-center quarter-gutters">
@@ -467,8 +470,8 @@
 									            <td>-</td>    
 									            <td>L</td>
 									            <td>XL</td>
-									            <tr class="descricao">
-									              <td colspan="5"><div id="logo-social-networks-info" class="info">
+									            <tr class="descricao" style="display: none;">
+									              <td colspan="5"><div id="logo-social-networks-info" class="info shadow">
 														<h3>LPersonalized ad</h3>
 														<p> Divulgação pela SINFO de vídeos promocionais da empresa nos ecrãs espalhados pelo recinto durante o evento.</p>
 													</div></td>
@@ -480,8 +483,8 @@
 									            <td>-</td>    
 									            <td>-</td>
 									            <td>XL</td>
-									            <tr class="descricao">
-									              <td colspan="5"><div id="pens-info" class="info">
+									            <tr class="descricao"  style="display: none;">
+									              <td colspan="5"><div id="pens-info" class="info shadow">
 														<h3>Logo in our pens</h3>
 														<p>Gold sponsor exclusive: every pen distributed in the event will have the company logo.</p>
 														<div class="column-group push-center">
@@ -497,8 +500,8 @@
 									            <td>-</td>    
 									            <td>-</td>
 									            <td>XL</td>
-									            <tr class="descricao">
-									              <td colspan="5"><div id="merchandise-info" class="info">
+									            <tr class="descricao"  style="display: none;">
+									              <td colspan="5"><div id="merchandise-info" class="info shadow">
 													<h3>Logo on merchandising</h3>
 													<p>Your company's logo will be present on the following merchandising items:</p>
 													<ul>
@@ -523,8 +526,8 @@
 									            <td>-</td>    
 									            <td>-</td>
 									            <td>XL</td>
-									            <tr class="descricao">
-									              <td colspan="5"><div id="logo-site-everywhere-info" class="info">
+									            <tr class="descricao"  style="display: none;">
+									              <td colspan="5"><div id="logo-site-everywhere-info" class="info shadow">
 														<h3>Logo on our Website</h3>
 														<p> Logotipo no cabeçalho do site da SINFO, vísivel em todas as páginas do website.</p>
 														<div class="column-group push-center">
@@ -539,8 +542,8 @@
 									            <td>-</td>    
 									            <td>-</td>
 									            <td>XL</td>
-									            <tr class="descricao">
-									              <td colspan="5"><div id="logo-site-everywhere-info" class="info">
+									            <tr class="descricao"  style="display: none;">
+									              <td colspan="5"><div id="logo-site-everywhere-info" class="info shadow">
 														<h3>Logo during stream</h3>
 														<p> Logotipo no cabeçalho do site da SINFO, vísivel em todas as páginas do website.</p></div></td>
 									            </tr>
@@ -551,8 +554,8 @@
 									            <td>-</td>    
 									            <td>-</td>
 									            <td>XL</td>
-									            <tr class="descricao">
-									              <td colspan="5"><div id="logo-site-everywhere-info" class="info">
+									            <tr class="descricao"  style="display: none;">
+									              <td colspan="5"><div id="logo-site-everywhere-info" class="info shadow">
 														<h3>Logo Banner</h3>
 														<p> Logotipo no cabeçalho do site da SINFO, vísivel em todas as páginas do website.</p></div></td>
 									            </tr>

@@ -139,3 +139,7 @@ p { padding: 5px 0; }
 	background-color: white;
 	text-decoration: none;
 };
+
+ul 	#apresentacao-info {
+	list-style-type: disc !important;;
+}

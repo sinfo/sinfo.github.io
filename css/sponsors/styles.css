@@ -84,11 +84,10 @@ tbody {
 	text-align: center;
 }
 
-.container {
+/*.container {
 	margin-right: auto;
 	margin-left: auto;
-}
-
+}*/
 .price {
 	background-color: #f2f2f2;
 	border-top-style: solid;

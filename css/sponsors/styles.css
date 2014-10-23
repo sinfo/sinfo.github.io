@@ -145,10 +145,6 @@ tbody tr:not(.price):not(.alterprice):not(.description):not(.perks):not(.perksDe
 	float: left;
 }
 
-.heading .toggle:active {
-	content: "-";
-}
-
 .PackageContent {
 	text-align:	center;
 	font-size: 12px;

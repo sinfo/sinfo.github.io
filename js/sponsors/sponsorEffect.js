@@ -20,10 +20,10 @@ jQuery(document).ready(function() {
 	 	if (jQuery(this).next(".description").is(":hidden")) {
 	 		jQuery(".description").hide();
 	 		jQuery(this).next(".description").show();
-	 		jQuery(this).closest(".toggle").text("-");
+	 		jQuery(this).closest('div').find(".toggle").text("-");
 	 	}else {
 	 		jQuery(this).next(".description").hide();
-	 		jQuery(this).closest('div').next.find(".toggle").text("+");
+	 		jQuery(this).closest('div').find(".toggle").text("+");
 	 	};               
 	});
 

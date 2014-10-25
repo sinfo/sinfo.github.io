@@ -1,3 +1,63 @@
+<? 
+// define variables and set to empty values
+$companyErr = $emailErr = $companyCheck = $emailCheck = "";
+$company = $email = "";
+
+	if ($_SERVER["REQUEST_METHOD"] == "POST") {
+
+	   if (empty($_POST["company"])) {
+
+	     $companyErr = "Company or Entity name is required";
+	   } else {
+
+		     $company = validation($_POST["company"]);
+		     // check if name only contains letters and whitespace
+		     if (!preg_match("/^[a-zA-Z ]*$/",$company)) {
+		       $companyErr = "Only letters and white space allowed";
+		     } else {
+		     	$companyCheck = 'OK';
+		     }
+
+	   }
+
+	   if (empty($_POST["email"])) {
+
+	     $emailErr = "Email is required";
+	   } else {
+
+		     $email = validation($_POST["email"]);
+		     // check if e-mail address is well-formed
+		     if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+		       $emailErr = "Invalid email format"; 
+		     } else {
+		     	$emailCheck = 'OK';
+		     }
+	   }
+
+	   if (($companyCheck == 'OK') AND ($emailCheck == 'OK')) {
+	   	
+		   	 //Send
+		    $message = 'A empresa ' . $company .' gostaria de ser contactada para ' . $email;
+		    $Subject = 'Novo Request';
+		    $headers = 'From: Sponsor Page <geral@sinfo.org>';
+
+		    mail('geral@sinfo.org', $Subject, $message, $headers);
+
+		    header('Location: sponsor.php');
+		}/* else {
+			/*header('Location: sponsor.php#more-information');*
+		} */
+	}
+
+	function validation($data) {
+	   $data = trim($data);
+	   $data = stripslashes($data);
+	   $data = htmlspecialchars($data);
+	   return $data;
+	}
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 	<head>
@@ -785,7 +845,30 @@
 			<div id="more-information" class="column-group gutters">
 				<div class="all-100">
 					<h2>For more information</h2>
-					<p>We'd be happy to answer any questions, requests for extra information or alternative small participation raised by reading this page. To do this, do not hesitate to contact the member that contacted you or contact us via our email address <a href="mailto:geral@sinfo.org">geral@sinfo.org</a>.</p>
+					<p>We'd be happy to answer any questions, requests for extra information or alternative small participation raised by reading this page. To do this, do not hesitate to contact us via this form</p>
+				</div>
+				<div class="all-100">
+					<form class="ink-form" method="post" action="">
+					    <div class="column-group gutters">
+					        <div class="control-group all-40 small-100 tiny-100 <?if ($companyErr != '') { echo 'validation error'; }?> required">
+					            <label for="company">Company or Entity</label>
+					            <div class="control">
+					                <input type="text" name="company" value="<? echo $company; ?>" id="required-company">
+					            </div>
+					            <p class="tip"><? echo $companyErr; ?></p>
+					        </div>
+					        <div class="control-group all-40 small-100 tiny-100 <?if ($emailErr != '') { echo 'validation error'; }?> required">
+					            <label for="email">Email</label>
+					            <div class="control">
+					                <input type="text" name="email" value="<? echo $email; ?>" id="required-email">
+					            </div>
+					            <p class="tip"><? echo $emailErr; ?></p>;
+					        </div>
+					        <div class="control-group all-20 small-100 tiny-100">
+					        	<button class="ink-button" type="submit" name="submit" value="submit">Button</button>
+					        </div>
+					    </div>
+					</form>
 				</div>
 			</div>
 		</div>

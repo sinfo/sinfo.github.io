@@ -7,10 +7,10 @@ jQuery(document).ready(function() {
 	 	jQuery(this).next(".item").next(".description").show();
 
 	 	if (jQuery(this).next(".content").is(":hidden")) {
-	 		jQuery(this).closest('div').find(".toggle").text("-");
+	 		jQuery(this).closest('div').find(".toggleHead").text("-");
 	 		jQuery(this).next(".content").slideToggle(500);	 		
 	 	}else{
-	 		jQuery(this).closest('div').find(".toggle").text("+");
+	 		jQuery(this).closest('div').find(".toggleHead").text("+");
 	 		jQuery(this).next(".content").slideToggle(500);	 
 	 	};
 
@@ -20,10 +20,12 @@ jQuery(document).ready(function() {
 	 	if (jQuery(this).next(".description").is(":hidden")) {
 	 		jQuery(".description").hide();
 	 		jQuery(this).next(".description").show();
-	 		jQuery(this).closest('div').find(".toggle").text("-");
+	 		jQuery(".toggle").text("+");
+	 		jQuery(this).first('div').find(".toggle").text("-");
+	 		//jQuery(this).closest('div').find(".toggle").text("-");
 	 	}else {
 	 		jQuery(this).next(".description").hide();
-	 		jQuery(this).closest('div').find(".toggle").text("+");
+	 		jQuery(this).first('div').find(".toggle").text("+");
 	 	};               
 	});
 

@@ -44,7 +44,7 @@ tbody {
 
 .alterprice {
 	color: white;
-	background-color: #c0c0c0;
+	background-color: #bbbbbb;
 }
 
 .perks {
@@ -53,11 +53,18 @@ tbody {
 	border-top-width: 1px;
 }
 
+.discount {
+	color: white;
+	background-color: #0080ff;
+	border-top-style: solid;
+	border-top-width: 1px;
+}
+
 .choose {
 	float: left;
 }
 
-tbody tr:not(.price):not(.alterprice):not(.description):not(.perks):not(.perksDescription):not(.choose):hover {
+tbody tr:not(.price):not(.alterprice):not(.discount):not(.description):not(.perks):not(.perksDescription):not(.choose):hover {
 	cursor: pointer;
 	background-color: #c0c0c0;
 	color: white;
@@ -86,6 +93,10 @@ tbody tr:not(.price):not(.alterprice):not(.description):not(.perks):not(.perksDe
 	-webkit-box-shadow: inset 0px 15px 5px -10px rgba(0, 0, 0, 0.2);
 	-moz-box-shadow:    inset 0px 15px 5px -10px rgba(0, 0, 0, 0.2);
 	box-shadow:         inset 0px 15px 5px -10px rgba(0, 0, 0, 0.2);
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+	border-bottom-color: #bbbbbb;
+	padding-bottom: 10px;
 }
 
 .alternate {

@@ -31,7 +31,9 @@ jQuery(document).ready(function() {
 	});
 
 	jQuery(".redirectPub").click(function(){
-		$( ".container" ).find( ".heading" ).next(".content").eq(2).slideToggle(500);
+		if ($( ".container" ).find( ".heading" ).next(".content").eq(2).is(":hidden")) {
+			$( ".container" ).find( ".heading" ).next(".content").eq(2).slideToggle(500);
+		};
 		$('html, body').animate({
 	        scrollTop: $("#Publicity").offset().top
 	    }, 2000);

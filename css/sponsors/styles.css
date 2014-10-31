@@ -53,6 +53,16 @@ tbody {
 	border-top-width: 1px;
 }
 
+.perksDescription ul {
+	display: table;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+
+.perksDescription li {
+	text-align: left;
+}
+
 .discount {
 	color: white;
 	background-color: #0080ff;
@@ -87,6 +97,16 @@ tbody tr:not(.price):not(.alterprice):not(.discount):not(.description):not(.perk
 
 .description {
 	display: none;
+}
+
+.description ul {
+	display: table;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+
+.description li {
+	text-align: left;
 }
 
 .shadow {
@@ -143,4 +163,9 @@ tbody tr:not(.price):not(.alterprice):not(.discount):not(.description):not(.perk
 
 .valid {
 	border: 1px solid green;
+}
+
+.reasons {
+	text-align: center;
+	font-size: 20px;
 }

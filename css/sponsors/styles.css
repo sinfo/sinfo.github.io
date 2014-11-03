@@ -116,7 +116,7 @@ tbody td:not(.firstTd):not(.noPadding) {
 
 @media print {
 	.content {
-		display: block;
+		display: inline;
 	}
 }
 

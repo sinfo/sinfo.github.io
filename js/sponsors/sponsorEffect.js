@@ -12,7 +12,6 @@ jQuery(document).ready(function() {
 	 	}else{
 	 		jQuery(this).closest('div').find(".toggleHead").text("+");
 	 		jQuery(this).next(".content").slideToggle(500);
-	 		jQuery(this).find(".item").is("").hide();
 	 	};
 
 	});

@@ -110,6 +110,16 @@ tbody td:not(.firstTd):not(.noPadding) {
 	display: none;
 }
 
+.content {
+	display: none;
+}
+
+@media print {
+	.content {
+		display: block;
+	}
+}
+
 .description ul {
 	display: table;
     margin: 0 auto;

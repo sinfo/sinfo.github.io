@@ -9,6 +9,8 @@ $(document).ready(function() {
 	 		$(this).next(".content").slideToggle(500);			
 	 	}else{
 	 		$(this).closest('div').find(".toggleHead").text("+");
+	 		$(".description").hide();
+	 		$(".toggle").text("+");
 	 		$(this).next(".content").slideToggle(500);
 	 	};
 

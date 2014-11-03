@@ -30,6 +30,11 @@ th {
 tbody {
 	text-align: center;
 }
+@media print {
+  table {
+    width: 100%;
+  }
+}
 
 /*.container {
 	margin-right: auto;

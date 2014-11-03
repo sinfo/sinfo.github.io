@@ -339,6 +339,13 @@ font-size: 0.8em;
   z-index: 100;
   -webkit-transform: scale3d(1, 1, 1);
 }
+
+
+@media print {
+  #topbar {
+    position: static;
+  }
+}
 #topbar img{
   max-height: 40px;
 }

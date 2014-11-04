@@ -2,7 +2,7 @@
 	$company = $_POST["company"];
 	$email = $_POST["email"];
 
-	$message = 'A empresa ' . $company .' gostaria de ser contactada para' . $email;
+	$message = 'A empresa ' . $company .' gostaria de ser contactada para ' . $email;
     $Subject = 'Novo Request';
     $headers = 'From: Sponsor Page <geral@sinfo.org>';
 

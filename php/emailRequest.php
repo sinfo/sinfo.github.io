@@ -1,8 +1,16 @@
 <?
+	$startup = '';
+
+	$startup = $_POST["startupCheck"];
 	$company = $_POST["company"];
 	$email = $_POST["email"];
 
-	$message = 'A empresa ' . $company .' gostaria de ser contactada para ' . $email;
+	if ($startup == 'isStartup') {
+		$message = 'A startup ' . $company .' gostaria de ser contactada para ' . $email;
+	} else {
+		$message = 'A empresa ' . $company .' gostaria de ser contactada para ' . $email;
+	}
+
     $Subject = 'Novo Request';
     $headers = 'From: Sponsor Page <geral@sinfo.org>';
 

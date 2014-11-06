@@ -40,4 +40,12 @@ $(document).ready(function() {
 	        scrollTop: $("#Publicity").offset().top
 	    }, 2000);
 	});
+
+	$("#startupCheck").click(function(){
+		if ($(this).is(":checked")) {
+	 		$("#CompanyName").replaceWith("<label id='CompanyName' for='company'>Startup</label>");		
+	 	}else{
+			$("#CompanyName").replaceWith("<label id='CompanyName' for='company'>Company or Entity</label>");
+		}
+	});
 });

@@ -194,3 +194,9 @@ tbody td:not(.firstTd):not(.noPadding) {
 .notIncluded {
 	color: #c30;
 }
+
+.starup-control {
+	width: 100%;
+	margin-left: 35px;
+	margin-bottom: 10px;
+}

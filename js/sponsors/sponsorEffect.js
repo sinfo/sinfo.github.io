@@ -20,7 +20,7 @@ $(document).ready(function() {
 	 	if ($(this).next(".description").is(":hidden")) {
 	 		$(".description").hide();
 	 		$(this).next(".description").show();
-	 		var offset = $( this ).offset().top - 50;
+	 		var offset = $( this ).offset().top - 200;
 	 		$('body').scrollTo(offset);
 	 		$(".toggle").text("+");
 	 		$(this).first('div').find(".toggle").text("-");

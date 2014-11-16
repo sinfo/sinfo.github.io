@@ -200,3 +200,7 @@ tbody td:not(.firstTd):not(.noPadding) {
 	margin-left: 35px;
 	margin-bottom: 10px;
 }
+
+.infoStand {
+	list-style: none;
+}

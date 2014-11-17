@@ -204,3 +204,7 @@ tbody td:not(.firstTd):not(.noPadding) {
 .infoStand {
 	list-style: none;
 }
+
+.rollup {
+	width:130%;
+}

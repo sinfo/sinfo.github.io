@@ -7,11 +7,13 @@
 
 	if ($startup == 'isStartup') {
 		$message = 'A startup ' . $company .' gostaria de ser contactada para ' . $email;
+		$Subject = '[startup] Novo Request';
 	} else {
 		$message = 'A empresa ' . $company .' gostaria de ser contactada para ' . $email;
+		$Subject = 'Novo Request';
 	}
 
-    $Subject = 'Novo Request';
+    
     $headers = 'From: Sponsor Page <geral@sinfo.org>';
 
     mail('geral@sinfo.org', $Subject, $message, $headers);

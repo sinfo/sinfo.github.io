@@ -13,11 +13,14 @@
 		$Subject = 'Novo Request';
 	}
 
+	if ($email != '') {
+		if ($company != '') {
+			$headers = 'From: Sponsor Page <geral@sinfo.org>';
+
+   			mail('geral@sinfo.org', $Subject, $message, $headers);
+		}
+	}
     
-    $headers = 'From: Sponsor Page <geral@sinfo.org>';
-
-    mail('geral@sinfo.org', $Subject, $message, $headers);
-
     header('Location: ../sponsor.html');
 
 ?>

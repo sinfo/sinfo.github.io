@@ -3,7 +3,7 @@ body {
 }
 
 /* HEADER */
-.header {overflow:hidden; background: url('../img/sinfocheio.jpg') center no-repeat;;  background-color: transparent; 
+.header {overflow:hidden; background: url('../img/sinfocheio.jpg') center no-repeat;;  background-color: transparent;
 background-size: cover;-webkit-background-size: cover;-moz-background-size: cover;background-size: cover;background-attachment: fixed;background-position: center center;background-position-x: 50%;background-position-y: 50%;background-repeat: no-repeat;}
 .header h1 { text-align: center; margin:1em 0 0 0; padding:0; font-size: 4em;}
 .header h1 a, .header h1 a:link, .header h1 a:visited { color:#FFFFFF; text-decoration:none;}
@@ -17,7 +17,7 @@ background-size: cover;-webkit-background-size: cover;-moz-background-size: cove
   padding-bottom: 25px;
 }
 /* IST */
-.ist {overflow:hidden; background: url('../img/ist.jpg') center no-repeat;;  background-color: transparent; 
+.ist {overflow:hidden; background: url('../img/ist.jpg') center no-repeat;;  background-color: transparent;
 background-size: cover;-webkit-background-size: cover;-moz-background-size: cover;background-size: cover;background-attachment: fixed;background-position: center center;background-position-x: 50%;background-position-y: 50%;background-repeat: no-repeat;}
 .ist h1 { text-align: center; margin:2em 0 0 0; padding:0; font-size: 4em;}
 .ist h1 a, .ist h1 a:link, .ist h1 a:visited { color:#FFFFFF; text-decoration:none;}
@@ -80,9 +80,9 @@ height: 400px;}
 .orador .description { margin:1em auto; width:60%; padding:10px 0 10px 0; color: #FFFFFF; text-align: center;font-size: 40px;}
 .orador .opacidade {background: url(http://sapoblogs.do.sapo.pt/temp/classico_opacidade.png) repeat; padding:1em 0;height: 400px;}
 #orador_img img {
-  text-align: center; 
+  text-align: center;
   box-shadow: 0 0 20px rgba(0, 0, 0, 1);
-  -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 1); 
+  -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 1);
   -moz-box-shadow: 0 0 20px rgba(0, 0, 0, 1);
 }
 .orador .opacidade h1{
@@ -97,6 +97,7 @@ background-size: cover;-webkit-background-size: cover;-moz-background-size: cove
 .previousSpeakers h1 a:hover {text-decoration:none;}
 .previousSpeakers .description { margin:1em auto; width:60%; padding:10px 0 10px 0; color: #FFFFFF; text-align: center;}
 .previousSpeakers .opacidade {background: url(http://sapoblogs.do.sapo.pt/temp/classico_opacidade.png) repeat; padding:0.5em 0; height: 300px;}
+.previous-speakers img {width: 100%}
 
 
 @media (max-width: 400px) {
@@ -165,7 +166,7 @@ border-radius: 500px;
 .fa{
   font-size: 50px;
 }
-      
+
 .social-icon {
   font-size: 50px;
   text-decoration: none;

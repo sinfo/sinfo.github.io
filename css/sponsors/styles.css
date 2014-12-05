@@ -129,7 +129,9 @@ tbody td:not(.firstTd):not(.noPadding) {
 .description li {
 	text-align: left;
 }
-
+.description img {
+	width: 100%;
+}
 .shadow {
 	-webkit-box-shadow: inset 0px 15px 5px -10px rgba(0, 0, 0, 0.2);
 	-moz-box-shadow:    inset 0px 15px 5px -10px rgba(0, 0, 0, 0.2);

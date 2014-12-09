@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /css/
+Disallow: /js/
+Disallow: /php/
+Disallow: /upload-20140721.php

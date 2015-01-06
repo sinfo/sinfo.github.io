@@ -308,6 +308,10 @@ font-size: 0.8em;
     .team img { width: 90%; height: 90%;}
 }
 
+.previous-speakers p{
+  text-align: center;
+}
+
 
 @media (max-width: 650px) {
     .previous-speakers h6 { font-size: 150%; }

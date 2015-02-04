@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="en">
+<head>
+
+    <meta charset="utf-8">
+    <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge"><![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>Home</title>
+    <meta name="description" content="PSD to HTML5+CSS3 conversion.">
+    <meta name="keywords" content="PSD, HTML5, CSS3">
+    <meta name="author" content="Erwin Kaddy">
+
+    <link href='http://fonts.googleapis.com/css?family=Ubuntu:700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Roboto:100,300,700' rel='stylesheet' type='text/css'>
+    
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="assets/css/animate.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="assets/css/font-lineicons.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="assets/css/jquery.fancybox.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="assets/css/style.css" type="text/css" media="all" /> 
+    
+    <!--[if lt IE 9]>
+        <script src="assets/js/html5.js"></script>
+        <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body id="index">
+    <header id="mobileheader" class="navigation-bar-header light visible-xs"></header>
+    <!-- Header -->
+    <header id="header" class="navigation-bar-header light hidden-xs">
+      <div class="container">
+        <nav class="navigation">
+          <div class="navigation-txt visible-xs" data-toggle="dropdown">Home</div>
+          <button class="navigation-toggle visible-xs" type="button" data-toggle="dropdown">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <ul class="navigation-bar navigation-bar-left">          
+            <li><a href="index.html"><img src="assets/img/sinfoOn.png"></a>
+            <li><a href="index.html#about">About</a></li>
+            <!--<li><a href="#stat">Number Facts</a></li>-->
+            <li><a href="index.html#speakers">Speakers</a></li>
+            <li><a href="schedule.html">Schedule</a></li>
+            <li><a href="StartupRush.html">Startup Rush</a></li>
+            <li><a href="http://innovation.awards.pt/" target="_blank">IA</a></li>
+            <li><a href="#" style="color: #005588; font-weight: 300;">Partners</a></li>
+            <li><a href="contacts.html">Contacts</a></li>
+            <li class="featured"><a href="stream.html"><i class="fa fa-video-camera fa-1x"></i>Live Stream</a></li>
+          </ul>
+        </nav>
+      </div>      
+    </header>
+    <!-- Register Section -->
+    <section id="register" class="section light">
+      <div class="overlay"></div>
+      <div class="container">
+        <article class="article-big animated hiding" data-animation="fadeInUp" data-delay="0">
+          <h5>Upload you CV now!</h5>
+          <p>Are you new to the job market? Or maybe looking for a new challenge? Well, send us your curriculum vitae and every company present at SINFO 22 will receive it!</p>
+      <br/>
+          <input type="file" id="upload" onchange="UploadFile();" name="upload" style="visibility: hidden; width: 1px; height: 1px" multiple />
+          <a href="" id="UploadCV" onclick="document.getElementById('upload').click();  return false" class="btn btn-sm btn-tertiary">Upload CV</a>
+        </article>
+      </div>
+    </section>
+    <!-- End Register Section -->
+    <!-- Sponsors Section -->
+    <section id="partners" class="section dark">
+      <div class="container">
+        <h3>Partners</h3>
+        <br/>
+        <div class="sub-title">Diamond Partners</div>
+        <div class="row">
+          <ul class="list-inline">
+            <li style="width:40%"><a href="https://github.com/" target="_blank"><img src="assets/img/sponsor/GitHub_Logo.png" alt="sponsor-1" /></a></li>
+          </ul> 
+            </div>
+        <div class="sub-title">Platinum Partners</div>
+        <div class="row">
+          <ul class="list-inline">
+            <li style="width:31%"><a href="http://www.gatewit.com/pt/" target="_blank"><img src="assets/img/sponsor/gatewit.png" alt="sponsor-1" /></a></li>
+            <li style="width:31%"><a href="http://www.kpmg.com/PT/PT/Paginas/default.aspx" target="_blank"><img src="assets/img/sponsor/KPMG.png" alt="sponsor-1" /></a></li>
+            <li style="width:31%"><a href="http://www.boldint.com/" target="_blank"><img src="assets/img/sponsor/Bold.png" alt="sponsor-1" /></a></li>
+            <li style="width:31%"><a href="http://www2.deloitte.com/pt/pt.html" target="_blank"><img src="assets/img/sponsor/Deloite.png" alt="sponsor-1" /></a></li>
+            <li style="width:31%"><a href="http://www.ericsson.com/pt" target="_blank"><img src="assets/img/sponsor/Ericsson.png" alt="sponsor-1" /></a></li>
+          </ul> 
+        </div> 
+        <div class="sub-title">Gold Partners</div>
+        <div class="row">
+          <ul class="list-inline">
+            <li style="width:23%"><a href="http://www.pwc.pt/" target="_blank"><img src="assets/img/sponsor/PwC.png" alt="sponsor-1" /></a></li>
+            <li style="width:23%"><a href="http://www.rumos.pt/" target="_blank"><img src="assets/img/sponsor/rumos.png" alt="sponsor-1" /></a></li>
+            <li style="width:23%"><a href="http://www.sap.com/portugal/" target="_blank"><img src="assets/img/sponsor/SAP.png" alt="sponsor-1" /></a></li>
+            <li style="width:23%"><a href="http://www.accenture.com/pt-en/Pages/index.aspx" target="_blank"><img src="assets/img/sponsor/accenture.png" alt="sponsor-1" /></a></li>
+            <li style="width:23%"><a href="https://www.randstad.pt/" target="_blank"><img src="assets/img/sponsor/randstad.png" alt="sponsor-1" /></a></li>
+            <li style="width:23%"><a href="http://www.capgemini.com/" target="_blank"><img src="assets/img/sponsor/Capgemini.png" alt="sponsor-1" /></a></li>
+            <li style="width:23%"><a href="http://www.habber.com/" target="_blank"><img src="assets/img/sponsor/HabberTec.png" alt="sponsor-1" /></a></li>
+            <li style="width:23%"><a href="www.blip.pt/" target="_blank"><img src="assets/img/sponsor/blip.png" alt="sponsor-1" /></a></li>
+            <li style="width:23%"><a href="www.opensoft.pt/" target="_blank"><img src="assets/img/sponsor/opensoft.png" alt="sponsor-1" /></a></li>
+            <li style="width:23%"><a href="www.everis.com/portugal/pt-PT/home" target="_blank"><img src="assets/img/sponsor/Everis.png" alt="sponsor-1" /></a></li>
+            <li style="width:23%"><a href="www.hitachi.pt/" target="_blank"><img src="assets/img/sponsor/Hitachi.png" alt="sponsor-1" /></a></li>
+            <li style="width:23%"><a href="www.unisys.pt/" target="_blank"><img src="assets/img/sponsor/Unisys.png" alt="sponsor-1" /></a></li>
+          </ul>
+        </div>
+        <div class="sub-title">Silver Partners</div>
+        <div class="row">
+          <ul class="list-inline">
+            <li><a href="www.growin.pt/" target="_blank"><img src="assets/img/sponsor/Growin.png" alt="sponsor-1" /></a></li>
+            <li><a href="http://www.glintt.com/" target="_blank"><img src="assets/img/sponsor/Glintt.png" alt="sponsor-1" /></a></li>
+            <li><a href="http://www.runtime-revolution.com/runtime" target="_blank"><img src="assets/img/sponsor/runtime.png" alt="sponsor-1" /></a></li>
+            <li><a href="http://www.itpeople.pt/" target="_blank"><img src="assets/img/sponsor/itpeople.png" alt="sponsor-1" /></a></li>
+            <li><a href="http://www.novabase.pt/" target="_blank"><img src="assets/img/sponsor/novabase.png" alt="sponsor-1" /></a></li>
+            <li><a href="http://www.enear.co/" target="_blank"><img src="assets/img/sponsor/enear.png" alt="sponsor-1" /></a></li>
+            <li><a href="http://www.outsystems.com/" target="_blank"><img src="assets/img/sponsor/OutSystems.png" alt="sponsor-1" /></a></li>
+            <li><a href="http://www.edisoft.pt//" target="_blank"><img src="assets/img/sponsor/Edisoft.png" alt="sponsor-1" /></a></li>
+            <li><a href="http://www.syone.com/index.php/pt/" target="_blank"><img src="assets/img/sponsor/Syone.png" alt="sponsor-1" /></a></li>
+            <li><a href="http://www.itsector.pt/pt.aspx" target="_blank"><img src="assets/img/sponsor/ITsector.png" alt="sponsor-1" /></a></li>           
+          </ul>
+        </div>
+        <div class="sub-title">Partners</div>
+        <div class="row">
+          <ul class="list-inline">
+            <li><a href="http://www.microsoft.com/pt-pt/default.aspx" target="_blank"><img src="assets/img/sponsor/Microsoft.png" alt="sponsor-1" /></a></li>
+            <li><a href="http://www.faber-ventures.com/" target="_blank"><img src="assets/img/sponsor/faber.png" alt="sponsor-1" /></a></li>
+            <li><a href="https://unbabel.com/" target="_blank"><img src="assets/img/sponsor/Unbabel.png" alt="sponsor-1" /></a></li>
+            <li><a href="http://sapo.miniclip.com/games/pt/" target="_blank"><img src="assets/img/sponsor/Miniclip.png" alt="sponsor-1" /></a></li>
+            <li><a href="http://www.itgrow.pt/pt/inicio" target="_blank"><img src="assets/img/sponsor/iTGROW.png" alt="sponsor-1" /></a></li>
+            <li><a href="http://www.icreateconsulting.com/" target="_blank"><img src="assets/img/sponsor/icreate.png" alt="sponsor-1" /></a></li>
+          </ul>
+        </div>
+        <div class="sub-title">Media Partners</div>
+        <div class="row">
+          <ul class="list-inline">
+            <li><a href="http://www.sapo.pt/" target="_blank">sapo</a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <footer id="footer" style="text-align: center;" >
+      © 2015 &nbsp;&nbsp; All rights reserved.        
+    </footer>
+    <!-- End Price Section -->
+<!--[if lt IE 9]>
+        <script type="text/javascript" src="assets/js/jquery-1.11.0.min.js?ver=1"></script>
+    <![endif]-->  
+    <!--[if (gte IE 9) | (!IE)]><!-->  
+       <script type="text/javascript" src="assets/js/jquery-2.1.0.min.js?ver=1"></script>
+    <!--<![endif]-->  
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&amp;sensor=false"></script> 
+    <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="assets/js/jquery.nav.js"></script>
+    <script type="text/javascript" src="assets/js/jquery.appear.js"></script>
+    <script type="text/javascript" src="assets/js/jquery.countTo.js"></script>
+    <script type="text/javascript" src="assets/js/waypoints.min.js"></script>
+    <script type="text/javascript" src="assets/js/waypoints-sticky.min.js"></script>
+    <script type="text/javascript" src="assets/js/jquery.fancybox.js"></script>
+    <script type="text/javascript" src="assets/mailchimp/js/mailing-list.js"></script>
+    <script type="text/javascript" src="assets/js/scripts.js"></script>
+    <script type="text/javascript" src="assets/js/uploadCV.js"></script>
+</body>
+</html>

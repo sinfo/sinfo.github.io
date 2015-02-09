@@ -457,7 +457,7 @@ label.error { display: block; }
   padding-top: 15px; 
   width: 90%; }
 #schedule .panel .panel-heading { background: #FFF; border: none; border-bottom: 1px solid #ddd; }
-#schedule .panel .panel-title a { font-size: 27px; display: block; padding: 10px 0px 5px 0px; color: #0077AA; }
+#schedule .panel .panel-title a { font-size: 27px; display: block; padding: 10px 0px 5px 0px; color: #0077AA; font-weight: 300; }
 #schedule .panel .panel-title a:Hover { text-decoration: none; }
 #schedule .panel .panel-title { padding: 0; }
 #schedule .panel-group .panel-heading+.panel-collapse .panel-body { border-top: 0; }

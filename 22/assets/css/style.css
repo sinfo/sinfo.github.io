@@ -218,6 +218,23 @@ hr.white { border-color: #F3AE9B; }
 #register .overlay { background: #0077AA; opacity: .8; }
 #register.section, #newsletter.section { padding-top: 60px; }
 
+#rush { background: url('../img/blackboard.png') center top no-repeat; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;}
+
+#rush img{
+  width: 400px;
+  margin-top: 25px;
+}
+.image-container{
+  width: 100%;
+}
+
+#rush span{
+  font-size: 18pt;
+  font-weight: 300;
+  margin-top: 20px;
+}
+
+
 #elements { text-align: left; }
 
 .vc-example { margin-bottom: 40px; }

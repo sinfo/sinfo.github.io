@@ -54,24 +54,515 @@
         </nav>
       </div>      
     </header>
-        <!-- Sponsors Section -->
-        <section id="hero" class="light">
+    <section id="rush" class="section light">
+      <div class="overlay"></div>
       <div class="container">
-        <div class="home-bg">
-          <div class="hero-content text-center ">
-           <div class="container">
-        <div class="row">
-          <div class="col-md-12 stream">
-            <h2>Startup Rush page will be available soon</h2>
-            <br/>
-            <br/>
+        <article class="article-big animated hiding" data-animation="fadeInUp" data-delay="0">
+          <div class="image-container">
+            <img src="assets//img/Badges_STARTUPRush_Startup.png">
           </div>
-        </div>
-      </div>
-          </div>          
-        </div>
+          <span><span class="fa fa-calendar"></span> 27 and 28 February </span>
+
+          <!--<h5>Upload you CV now!</h5>
+          <p>Are you new to the job market? Or maybe looking for a new challenge? Well, send us your curriculum vitae and every company present at SINFO 22 will receive it!</p>
+      <br/>
+          <input type="file" id="upload" onchange="UploadFile();" name="upload" style="visibility: hidden; width: 1px; height: 1px" multiple />
+          <a href="" id="UploadCV" onclick="document.getElementById('upload').click();  return false" class="btn btn-sm btn-tertiary">Upload CV</a>-->
+        </article>
       </div>
     </section>
+    <section id="schedule" class="section dark">
+      <div class="container">
+        <h3>Schedule</h3>
+        <br />
+        <section class="nav-tabs-default hidden-xs">
+          <!-- Parent Nav Tabs -->
+          <ul class="nav nav-tabs">
+            <li class="active"><a href="#DayOne" data-toggle="tab">
+              <div class="title">27 Feb</div>
+            </a></li>
+            <li><a href="#DayTwo" data-toggle="tab">
+              <div class="title">28 Feb</div>
+            </a></li>
+          </ul>
+
+        <!-- Parent Tab panes -->
+          <div class="tab-content">
+            <!-- Day One -->
+            <div class="tab-pane fade in active" id="DayOne">
+                
+                <!-- Child 1 Nav Tabs -->
+                <ul class="nav nav-tabs">
+                  <li class="active"><a href="#DayOne-0" data-toggle="tab">Full Day</a></li>
+                </ul>
+
+                 <!-- Child 1 Tab panes -->
+                <div class="tab-content">
+                  <div class="tab-pane fade in active" id="DayOne-0">
+                    <div class="panel-group timeline-schedule" id="panelTimelineOne">
+                      <!-- Company presentations-->
+                      <div class="panel panel-default">
+                        <div class="speaker-wrapper" style="width:50px; left: 70px;">
+                          <img src="assets/img/speaker/checkin.png" class="img-responsive img-circle" alt="speaker-2" />
+                        </div>
+                        <div class="panel-heading">
+                          <div class="panel-title">
+                            <div class="time"><i class="fa fa-clock-o"></i> 9h00 <div style="float: right"><i class="fa fa-map-marker"></i>Central Atrium</div></div>
+                            <a data-toggle="collapse" data-parent="#panelTimelineOne" href="#item1" class="collapsed">
+                               Check in
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="panel panel-default">
+                        <div class="speaker-wrapper" style="width:50px; left: 70px;">
+                          <img src="assets/img//speaker/opening.png" class="img-responsive img-circle" alt="speaker-2" />
+                        </div>
+                        <div class="panel-heading">
+                          <div class="panel-title">
+                            <div class="time"><i class="fa fa-clock-o"></i> 9h30 <div style="float: right"><i class="fa fa-map-marker"></i>Central Hall</div></div>
+                            <a data-toggle="collapse" data-parent="#panelTimelineOne" href="#item2" class="collapsed">
+                               Opening Presentation
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="panel panel-default">
+                        <div class="speaker-wrapper" style="width:50px; left: 70px;">
+                          <img src="assets/img/speaker/francia.jpg" class="img-responsive img-circle" alt="speaker-2" />
+                        </div>
+                        <div class="panel-heading">
+                          <div class="panel-title">
+                            <div class="time"><i class="fa fa-clock-o"></i> 10h00 <div style="float: right"><i class="fa fa-map-marker"></i>Central Hall</div></div>
+                            <a data-toggle="collapse" data-parent="#panelTimelineOne" href="#item3" class="collapsed">
+                               <i>"What every successful open source project needs"</i> - Steve Francia
+                            <div class="pull-right fa fa-angle-up"></div>
+                              <div class="pull-right fa fa-angle-down"></div>
+                            </a>
+                          </div>
+                        </div>
+                        <div id="item3" class="panel-collapse collapse">
+                          <div class="panel-body">
+                            <article>
+                              <p>In the last few years open source has transformed the software industry. From Android to Wikipedia, open source is everywhere, but how does one succeed in it? While open source projects come in all shapes and sizes and all forms of governance, no matter what kind of project you’re a part of, there are a set of fundamentals that lead to success. I’d like to share some of the lessons I’ve learned from running two of the largest commercial open source projects, Docker and MongoDB, as well as some very successful community projects.</p>
+                              <p class="author"><a href="speaker/SteveFrancia.html"><strong><i class="fa fa-user"></i>Steve Francia - Chief Operator: Open Source at Docker</strong></a></p>
+                            </article>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="panel panel-default">
+                        <div class="speaker-wrapper" style="width:50px; left: 70px;">
+                          <img src="assets/img/speaker/coffe.png" class="img-responsive img-circle" alt="speaker-2" />
+                        </div>
+                        <div class="panel-heading">
+                          <div class="panel-title">
+                            <div class="time"><i class="fa fa-clock-o"></i> 11h00 <div style="float: right"><i class="fa fa-map-marker"></i>Central Atrium</div></div>
+                            <a data-toggle="collapse" data-parent="#panelTimelineOne" href="#item4" class="collapsed">
+                               Coffee Break + Networking
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="panel panel-default">
+                        <div class="speaker-wrapper" style="width:120px; left: 30px;">
+                          <img src="assets/img/speaker/jobbox.png" class="img-responsive img-circle" alt="speaker-2" />
+                        </div>
+                        <div class="panel-heading">
+                          <div class="panel-title">
+                            <div class="time"><i class="fa fa-clock-o"></i> 11h30 <div style="float: right"><i class="fa fa-map-marker"></i>Central Hall</div></div>
+                            <a data-toggle="collapse" data-parent="#panelTimelineOne" href="#item5" class="collapsed">
+                               Jobbox
+                            <div class="pull-right fa fa-angle-up"></div>
+                              <div class="pull-right fa fa-angle-down"></div>
+                            </a>
+                          </div>
+                        </div>
+                        <div id="item5" class="panel-collapse collapse">
+                          <div class="panel-body">
+                            <article>
+                              <p>details soon...</p>
+                            </article>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="panel panel-default">
+                        <div class="speaker-wrapper" style="width:120px; left: 30px;">
+                          <img src="assets/img/speaker/imaginary.jpg" class="img-responsive img-circle" alt="speaker-2" />
+                        </div>
+                        <div class="panel-heading">
+                          <div class="panel-title">
+                            <div class="time"><i class="fa fa-clock-o"></i> 11h50 <div style="float: right"><i class="fa fa-map-marker"></i>Central Hall</div></div>
+                            <a data-toggle="collapse" data-parent="#panelTimelineOne" href="#item6" class="collapsed">
+                               Imaginary Cloud
+                            <div class="pull-right fa fa-angle-up"></div>
+                              <div class="pull-right fa fa-angle-down"></div>
+                            </a>
+                          </div>
+                        </div>
+                        <div id="item6" class="panel-collapse collapse">
+                          <div class="panel-body">
+                            <article>
+                              <p>details soon...</p>
+                            </article>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="panel panel-default">
+                        <div class="speaker-wrapper" style="width:120px; left: 30px;">
+                          <img src="assets/img/speaker/feedzai.jpg" class="img-responsive img-circle" alt="speaker-2" />
+                        </div>
+                        <div class="panel-heading">
+                          <div class="panel-title">
+                            <div class="time"><i class="fa fa-clock-o"></i> 12h10 <div style="float: right"><i class="fa fa-map-marker"></i>Central Hall</div></div>
+                            <a data-toggle="collapse" data-parent="#panelTimelineOne" href="#item7" class="collapsed">
+                               Feedzai
+                            <div class="pull-right fa fa-angle-up"></div>
+                              <div class="pull-right fa fa-angle-down"></div>
+                            </a>
+                          </div>
+                        </div>
+                        <div id="item7" class="panel-collapse collapse">
+                          <div class="panel-body">
+                            <article>
+                              <p>details soon...</p>
+                            </article>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="panel panel-default">
+                        <div class="speaker-wrapper" style="width:50px; left: 70px;">
+                          <img src="assets/img/speaker/lunch.png" class="img-responsive img-circle" alt="speaker-2" />
+                        </div>
+                        <div class="panel-heading">
+                          <div class="panel-title">
+                            <div class="time"><i class="fa fa-clock-o"></i> 12h30 <div style="float: right"><i class="fa fa-map-marker"></i>Central Atrium</div></div>
+                            <a data-toggle="collapse" data-parent="#panelTimelineOne" href="#item8" class="collapsed">
+                               Lunch + Networking
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="panel panel-default">
+                        <div class="speaker-wrapper" style="width:50px; left: 70px;">
+                          <img src="assets/img/speaker/phil.png" class="img-responsive img-circle" alt="speaker-2" />
+                        </div>
+                        <div class="panel-heading">
+                          <div class="panel-title">
+                            <div class="time"><i class="fa fa-clock-o"></i> 14h00 <div style="float: right"><i class="fa fa-map-marker"></i>Central Hall</div></div>
+                            <a data-toggle="collapse" data-parent="#panelTimelineOne" href="#item9" class="collapsed">
+                               Phil Calçado
+                              <div class="pull-right fa fa-angle-up"></div>
+                              <div class="pull-right fa fa-angle-down"></div>
+                            </a>
+                          </div>
+                        </div>
+                        <div id="item9" class="panel-collapse collapse">
+                          <div class="panel-body">
+                            <article>
+                              <p>details soon...</p>
+                              <p class="author"><a href="speaker/PhilCalcado.html"><strong><i class="fa fa-user"></i>Phil Calçado - Director of Engineering at SoundCloud</strong></a></p>
+                            </article>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="panel panel-default">
+                        <div class="speaker-wrapper" style="width:50px; left: 70px;">
+                          <img src="assets/img/speaker/talk.png" class="img-responsive img-circle" alt="speaker-2" />
+                        </div>
+                        <div class="panel-heading">
+                          <div class="panel-title">
+                            <div class="time"><i class="fa fa-clock-o"></i> 15h00 <div style="float: right"><i class="fa fa-map-marker"></i>Central Atrium</div></div>
+                            <a data-toggle="collapse" data-parent="#panelTimelineOne" href="#item10" class="collapsed">
+                               Mentor Speed Dating + Networking
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="panel panel-default">
+                        <div class="speaker-wrapper" style="width:50px; left: 70px;">
+                          <img src="assets/img/speaker/hack.png" class="img-responsive img-circle" alt="speaker-2" />
+                        </div>
+                        <div class="panel-heading">
+                          <div class="panel-title">
+                            <div class="time"><i class="fa fa-clock-o"></i> 16h00 <div style="float: right"><i class="fa fa-map-marker"></i>Central Hall</div></div>
+                            <a data-toggle="collapse" data-parent="#panelTimelineOne" href="#item11" class="collapsed">
+                              Start Hackathon Day 1
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="panel panel-default">
+                        <div class="speaker-wrapper" style="width:50px; left: 70px;">
+                          <img src="assets/img/speaker/ideia.png" class="img-responsive img-circle" alt="speaker-2" />
+                        </div>
+                        <div class="panel-heading">
+                          <div class="panel-title">
+                            <div class="time"><i class="fa fa-clock-o"></i> 16h00 <div style="float: right"><i class="fa fa-map-marker"></i>Central Hall</div></div>
+                            <a data-toggle="collapse" data-parent="#panelTimelineOne" href="#item12" class="collapsed">
+                               Pitch Your Idea!
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="panel panel-default">
+                        <div class="speaker-wrapper" style="width:50px; left: 70px;">
+                          <img src="assets/img/speaker/coffe.png" class="img-responsive img-circle" alt="speaker-2" />
+                        </div>
+                        <div class="panel-heading">
+                          <div class="panel-title">
+                            <div class="time"><i class="fa fa-clock-o"></i> 17h30 <div style="float: right"><i class="fa fa-map-marker"></i>Central Atrium</div></div>
+                            <a data-toggle="collapse" data-parent="#panelTimelineOne" href="#item13" class="collapsed">
+                               Coffee Break + Networking
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="panel panel-default">
+                        <div class="speaker-wrapper" style="width:50px; left: 70px;">
+                          <img src="assets/img/speaker/ideia.png" class="img-responsive img-circle" alt="speaker-2" />
+                        </div>
+                        <div class="panel-heading">
+                          <div class="panel-title">
+                            <div class="time"><i class="fa fa-clock-o"></i> 18h00 <div style="float: right"><i class="fa fa-map-marker"></i>Central Hall</div></div>
+                            <a data-toggle="collapse" data-parent="#panelTimelineOne" href="#item14" class="collapsed">
+                               Pitch Your Idea!
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="panel panel-default">
+                        <div class="speaker-wrapper" style="width:50px; left: 70px;">
+                          <img src="assets/img/speaker/coffe.png" class="img-responsive img-circle" alt="speaker-2" />
+                        </div>
+                        <div class="panel-heading">
+                          <div class="panel-title">
+                            <div class="time"><i class="fa fa-clock-o"></i> 20h00 <div style="float: right"><i class="fa fa-map-marker"></i>Central Hall</div></div>
+                            <a data-toggle="collapse" data-parent="#panelTimelineOne" href="#item15" class="collapsed">
+                               Coffee Break + Networking
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="panel panel-default">
+                        <div class="speaker-wrapper" style="width:50px; left: 70px;">
+                          <img src="assets/img/speaker/end.png" class="img-responsive img-circle" alt="speaker-2" />
+                        </div>
+                        <div class="panel-heading">
+                          <div class="panel-title">
+                            <div class="time"><i class="fa fa-clock-o"></i> 00h00 <div style="float: right"><i class="fa fa-map-marker"></i>Central Atrium</div></div>
+                            <a data-toggle="collapse" data-parent="#panelTimelineOne" href="#item16" class="collapsed">
+                               End Hackaton Day 1
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+            <!-- Day One -->
+            <div class="tab-pane fade" id="DayTwo">
+                
+                <!-- Child 1 Nav Tabs -->
+                <ul class="nav nav-tabs">
+                  <li class="active"><a href="#DayTwo-0" data-toggle="tab">Full Day</a></li>
+                </ul>
+
+                <!-- Child 1 Tab panes -->
+                <div class="tab-content">
+                  <div class="tab-pane fade in active" id="DayOne-0">
+                    <div class="panel-group timeline-schedule" id="panelTimelineOne">
+                      <!-- Company presentations-->
+                      <div class="panel panel-default">
+                        <div class="speaker-wrapper" style="width:50px; left: 70px;">
+                          <img src="assets/img/speaker/checkin.png" class="img-responsive img-circle" alt="speaker-2" />
+                        </div>
+                        <div class="panel-heading">
+                          <div class="panel-title">
+                            <div class="time"><i class="fa fa-clock-o"></i> 9h00 <div style="float: right"><i class="fa fa-map-marker"></i>Central Atrium</div></div>
+                            <a data-toggle="collapse" data-parent="#panelTimelineOne" href="#item17" class="collapsed">
+                               Check in
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="panel panel-default">
+                        <div class="speaker-wrapper" style="width:120px; left: 30px;">
+                          <img src="assets/img/speaker/luna.png" class="img-responsive img-circle" alt="speaker-2" />
+                        </div>
+                        <div class="panel-heading">
+                          <div class="panel-title">
+                            <div class="time"><i class="fa fa-clock-o"></i> 9h30 <div style="float: right"><i class="fa fa-map-marker"></i>Central Hall</div></div>
+                            <a data-toggle="collapse" data-parent="#panelTimelineOne" href="#item18" class="collapsed">
+                               LunaCloud
+                              <div class="pull-right fa fa-angle-up"></div>
+                              <div class="pull-right fa fa-angle-down"></div>
+                            </a>
+                          </div>
+                        </div>
+                        <div id="item18" class="panel-collapse collapse">
+                          <div class="panel-body">
+                            <article>
+                              <p>details soon...</p>
+                            </article>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="panel panel-default">
+                        <div class="speaker-wrapper" style="width:120px; left: 30px;">
+                          <img src="assets/img/speaker/pharm.png" class="img-responsive img-circle" alt="speaker-2" />
+                        </div>
+                        <div class="panel-heading">
+                          <div class="panel-title">
+                            <div class="time"><i class="fa fa-clock-o"></i> 9h50 <div style="float: right"><i class="fa fa-map-marker"></i>Central Hall</div></div>
+                            <a data-toggle="collapse" data-parent="#panelTimelineOne" href="#item19" class="collapsed">
+                               PharmAssistant  
+                               <div class="pull-right fa fa-angle-up"></div>
+                              <div class="pull-right fa fa-angle-down"></div>
+                            </a>
+                          </div>
+                        </div>
+                        <div id="item19" class="panel-collapse collapse">
+                          <div class="panel-body">
+                            <article>
+                              <p>details soon...</p>
+                            </article>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="panel panel-default">
+                        <div class="speaker-wrapper" style="width:120px; left: 30px;">
+                          <img src="assets/img/speaker/uniplaces.png" class="img-responsive img-circle" alt="speaker-2" />
+                        </div>
+                        <div class="panel-heading">
+                          <div class="panel-title">
+                            <div class="time"><i class="fa fa-clock-o"></i> 10h10 <div style="float: right"><i class="fa fa-map-marker"></i>Central Hall</div></div>
+                            <a data-toggle="collapse" data-parent="#panelTimelineOne" href="#item20" class="collapsed">
+                               Uniplaces
+                              <div class="pull-right fa fa-angle-up"></div>
+                              <div class="pull-right fa fa-angle-down"></div>
+                            </a>
+                          </div>
+                        </div>
+                        <div id="item20" class="panel-collapse collapse">
+                          <div class="panel-body">
+                            <article>
+                              <p>details soon...</p>
+                            </article>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="panel panel-default">
+                        <div class="speaker-wrapper" style="width:50px; left: 70px;">
+                          <img src="assets/img/speaker/coffe.png" class="img-responsive img-circle" alt="speaker-2" />
+                        </div>
+                        <div class="panel-heading">
+                          <div class="panel-title">
+                            <div class="time"><i class="fa fa-clock-o"></i> 10h30 <div style="float: right"><i class="fa fa-map-marker"></i>Central Atrium</div></div>
+                            <a data-toggle="collapse" data-parent="#panelTimelineOne" href="#item21" class="collapsed">
+                               Coffee Break + Networking
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="panel panel-default">
+                        <div class="speaker-wrapper" style="width:50px; left: 70px;">
+                          <img src="assets/img/speaker/hack.png" class="img-responsive img-circle" alt="speaker-2" />
+                        </div>
+                        <div class="panel-heading">
+                          <div class="panel-title">
+                            <div class="time"><i class="fa fa-clock-o"></i> 11h00 <div style="float: right"><i class="fa fa-map-marker"></i>Central Hall</div></div>
+                            <a data-toggle="collapse" data-parent="#panelTimelineOne" href="#item22" class="collapsed">
+                              Start Hackathon Day 2
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="panel panel-default">
+                        <div class="speaker-wrapper" style="width:50px; left: 70px;">
+                          <img src="assets/img/speaker/ideia.png" class="img-responsive img-circle" alt="speaker-2" />
+                        </div>
+                        <div class="panel-heading">
+                          <div class="panel-title">
+                            <div class="time"><i class="fa fa-clock-o"></i> 11h00 <div style="float: right"><i class="fa fa-map-marker"></i>Central Hall</div></div>
+                            <a data-toggle="collapse" data-parent="#panelTimelineOne" href="#item23" class="collapsed">
+                               Pitch Your Idea!
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="panel panel-default">
+                        <div class="speaker-wrapper" style="width:50px; left: 70px;">
+                          <img src="assets/img/speaker/coffe.png" class="img-responsive img-circle" alt="speaker-2" />
+                        </div>
+                        <div class="panel-heading">
+                          <div class="panel-title">
+                            <div class="time"><i class="fa fa-clock-o"></i> 13h30 <div style="float: right"><i class="fa fa-map-marker"></i>Central Atrium</div></div>
+                            <a data-toggle="collapse" data-parent="#panelTimelineOne" href="#item24" class="collapsed">
+                               Coffee Break + Networking
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="panel panel-default">
+                        <div class="speaker-wrapper" style="width:50px; left: 70px;">
+                          <img src="assets/img/speaker/AlbertoL.png" class="img-responsive img-circle" alt="speaker-2" />
+                        </div>
+                        <div class="panel-heading">
+                          <div class="panel-title">
+                            <div class="time"><i class="fa fa-clock-o"></i> 14h00 <div style="float: right"><i class="fa fa-map-marker"></i>Central Hall</div></div>
+                            <a data-toggle="collapse" data-parent="#panelTimelineOne" href="#item25" class="collapsed">
+                               Alberto López
+                              <div class="pull-right fa fa-angle-up"></div>
+                              <div class="pull-right fa fa-angle-down"></div>
+                            </a>
+                          </div>
+                        </div>
+                        <div id="item25" class="panel-collapse collapse">
+                          <div class="panel-body">
+                            <article>
+                              <p>details soon...</p>
+                              <p class="author"><a href="speaker/AlbertoLopez.html"><strong><i class="fa fa-user"></i>Alberto López</strong></a></p>
+                            </article>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="panel panel-default">
+                        <div class="speaker-wrapper" style="width:50px; left: 70px;">
+                          <img src="assets/img/speaker/prize.png" class="img-responsive img-circle" alt="speaker-2" />
+                        </div>
+                        <div class="panel-heading">
+                          <div class="panel-title">
+                            <div class="time"><i class="fa fa-clock-o"></i> 15h00 <div style="float: right"><i class="fa fa-map-marker"></i>Central Hall</div></div>
+                            <a data-toggle="collapse" data-parent="#panelTimelineOne" href="#item26" class="collapsed">
+                               Prizes
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="panel panel-default">
+                        <div class="speaker-wrapper" style="width:50px; left: 70px;">
+                          <img src="assets/img/speaker/end.png" class="img-responsive img-circle" alt="speaker-2" />
+                        </div>
+                        <div class="panel-heading">
+                          <div class="panel-title">
+                            <div class="time"><i class="fa fa-clock-o"></i> 15h30 <div style="float: right"><i class="fa fa-map-marker"></i>Central Hall</div></div>
+                            <a data-toggle="collapse" data-parent="#panelTimelineOne" href="#item27" class="collapsed">
+                               Closing Presentation  
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+        </section>
+      </div>
+    </section> 
+
+
+
+
     <section id="partners" class="section dark">
       <div class="container">
         <h3>Partners</h3>
@@ -127,7 +618,7 @@
         <script type="text/javascript" src="../assets/js/jquery-1.11.0.min.js?ver=1"></script>
     <![endif]-->  
     <!--[if (gte IE 9) | (!IE)]><!-->  
-       <script type="text/javascript" src="../assets/js/jquery-2.1.0.min.js?ver=1"></script>
+       <script type="text/javascript" src="assets/js/jquery-2.1.0.min.js?ver=1"></script>
     <!--<![endif]-->  
     <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="assets/js/jquery.nav.js"></script>

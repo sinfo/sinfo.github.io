@@ -67,7 +67,7 @@ hr.white { border-color: #F3AE9B; }
 .center {text-align:center;}
 
 .btn { border: 1px solid #005588; border-radius: 0; background: transparent; }
-.btn:Hover { opacity: 1; }
+.btn:Hover { opacity: 1;}
 .btn-lg { font-size: 28px; }
 .btn-3d { background: #0077AA; color: #fff; border:1px solid transparent; border-bottom: 5px solid #005588; border-radius: 4px; }
 .btn-3d .fa { opacity: .4; color: #333; margin-right: 10px; }

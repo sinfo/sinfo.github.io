@@ -220,6 +220,8 @@ hr.white { border-color: #F3AE9B; }
 
 #rush { background: url('../img/blackboard.png') center top no-repeat; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;}
 
+#cal { background: url('../img/cal.png') center top no-repeat; background-attachment: fixed; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;}
+
 #rush img{
   width: 400px;
   margin-top: 25px;

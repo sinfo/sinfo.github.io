@@ -881,4 +881,5 @@ label.error { display: block; }
 
 @media (max-width: 619px) {
     .nav-tabs-default .tab-pane .nav-tabs > li > a {font-size: 12px; padding-bottom: 10px; padding-top: 10px; padding-left: 10px; padding-right: 10px; }
+    #stat .stat { font-size: 60px; }
 }

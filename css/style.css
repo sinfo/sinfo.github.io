@@ -11,6 +11,13 @@ background-size: cover;-webkit-background-size: cover;-moz-background-size: cove
 .header img {width:250px; text-align: center; /*margin-top: 1em;*/ }
 .header .description { margin:1em auto; width:60%; padding:10px 0 10px 0; color: #FFFFFF; text-align: center;}
 .header .opacidade {background: url(http://sapoblogs.do.sapo.pt/temp/classico_opacidade.png) repeat; padding:1em 0; height: 500px;}
+@media screen and (max-width: 640px){
+  .header .opacidade {
+    height: 700px;
+  }
+}
+
+
 
 .text-section:not(.prev-spekears){
   padding-top: 50px;

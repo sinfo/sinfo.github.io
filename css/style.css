@@ -8,7 +8,7 @@ background-size: cover;-webkit-background-size: cover;-moz-background-size: cove
 .header h1 { text-align: center; margin:1em 0 0 0; padding:0; font-size: 4em;}
 .header h1 a, .header h1 a:link, .header h1 a:visited { color:#FFFFFF; text-decoration:none;}
 .header h1 a:hover {text-decoration:none;}
-.header img {width:250px; text-align: center; margin-top: 1em; }
+.header img {width:250px; text-align: center; /*margin-top: 1em;*/ }
 .header .description { margin:1em auto; width:60%; padding:10px 0 10px 0; color: #FFFFFF; text-align: center;}
 .header .opacidade {background: url(http://sapoblogs.do.sapo.pt/temp/classico_opacidade.png) repeat; padding:1em 0; height: 500px;}
 
@@ -448,4 +448,8 @@ font-size: 0.8em;
 
 .techAndPres img {
   width: 100%;
+}
+
+#joinus h3 {
+  text-align: center;
 }

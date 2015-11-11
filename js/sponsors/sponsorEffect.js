@@ -6,7 +6,7 @@ $(document).ready(function() {
 
 	 	if ($(this).next(".content").is(":hidden")) {
 	 		$(this).closest('div').find(".toggleHead").text("-");
-	 		$(this).next(".content").slideToggle(500);			
+	 		$(this).next(".content").slideToggle(500);
 	 	}else{
 	 		$(this).closest('div').find(".toggleHead").text("+");
 	 		$(".description").hide();
@@ -37,13 +37,18 @@ $(document).ready(function() {
 			$( ".container" ).find( ".heading" ).next(".content").eq(2).slideToggle(500);
 		};
 		$('html, body').animate({
-	        scrollTop: $("#Publicity").offset().top
+	        scrollTop: $("#Publicity").offset().top-100
 	    }, 2000);
+		if ($("#Publicity").next(".content").is(":hidden")) {
+			$("#Publicity").next(".content").show();
+			$("#Publicity").closest('div').find(".toggleHead").text("-");
+		}
+
 	});
 
 	$("#startupCheck").click(function(){
 		if ($(this).is(":checked")) {
-	 		$("#CompanyName").replaceWith("<label id='CompanyName' for='company'>Startup</label>");		
+	 		$("#CompanyName").replaceWith("<label id='CompanyName' for='company'>Startup</label>");
 	 	}else{
 			$("#CompanyName").replaceWith("<label id='CompanyName' for='company'>Company or Entity</label>");
 		}

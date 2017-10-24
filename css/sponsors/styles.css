@@ -148,10 +148,15 @@ tbody td:not(.firstTd):not(.noPadding) {
 
 .toggle {
 	float: left;
+	font-weight: bold;
+	font-size: 15px;
 }
 
 .toggleHead {
 	float: left;
+	font-weight: bolder;
+    font-size: 15px;
+    margin-top: -3px;
 }
 
 .PackageContent {
@@ -209,4 +214,9 @@ tbody td:not(.firstTd):not(.noPadding) {
 
 .rollup {
 	width:130%;
+}
+
+.promo-video {
+	margin: auto;
+    width: 50%;
 }

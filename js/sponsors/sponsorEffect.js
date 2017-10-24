@@ -54,3 +54,8 @@ $(document).ready(function() {
 		}
 	});
 });
+
+$(window).ready(function(){
+	// Open 
+	$('.heading').first().click();
+});

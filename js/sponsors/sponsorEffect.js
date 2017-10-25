@@ -54,3 +54,8 @@ $(document).ready(function() {
 		}
 	});
 });
+
+$(window).ready(function(){
+	// Open First Table: 'Main Event' on page ready
+	$('.heading').first().click();
+});

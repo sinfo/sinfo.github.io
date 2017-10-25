@@ -1,5 +1,5 @@
 /* HEADER */
-.sponsor-header {overflow:hidden; background: url('../../img/sinfocheio.jpg') center no-repeat;;  background-color: transparent; background-size: cover;
+.sponsor-header {overflow:hidden; background: url('../../img/sponsors/BannerSiteSponsors2.png') center no-repeat;;  background-color: transparent; background-size: cover;
 background-size: cover;-webkit-background-size: cover;-moz-background-size: cover;background-size: cover;background-attachment: fixed;background-position: center center;background-position-x: 50%;background-position-y: 150%;background-repeat: no-repeat;}
 .sponsor-header h1 { text-align: center; margin:0.5em 0 0 0; padding:0; font-size: 4em;}
 .sponsor-header h1 a, .sponsor-header h1 a:link, .sponsor-header h1 a:visited { color:#FFFFFF; text-decoration:none;}
@@ -148,10 +148,15 @@ tbody td:not(.firstTd):not(.noPadding) {
 
 .toggle {
 	float: left;
+	font-weight: bold;
+	font-size: 15px;
 }
 
 .toggleHead {
 	float: left;
+	font-weight: bolder;
+    font-size: 15px;
+    margin-top: -3px;
 }
 
 .PackageContent {
@@ -209,4 +214,9 @@ tbody td:not(.firstTd):not(.noPadding) {
 
 .rollup {
 	width:130%;
+}
+
+.promo-video {
+	margin: auto;
+    width: 50%;
 }

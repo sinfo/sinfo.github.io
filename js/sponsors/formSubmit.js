@@ -35,7 +35,7 @@ $(document).ready(function() {
     if(hasError == false) {
      var formInput = $(".ink-form").serialize();
         $.post($(".ink-form").attr('action'),formInput, function(data){
-        alert("Thank you for your comment!");
+        alert("Thanks for your contact. We will get back to you soon!");
       });
     }
 

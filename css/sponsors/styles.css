@@ -82,7 +82,7 @@ tbody {
 }
 
 .choose {
-	float: left;
+	text-align: left;
 }
 
 tbody tr:not(.price):not(.alterprice):not(.discount):not(.description):not(.perks):not(.perksDescription):not(.choose):hover {
